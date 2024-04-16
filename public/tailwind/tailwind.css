@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Golestan;
+  src: url(../fonts/IRANSansWeb-Light.eot);
+  src: url(../fonts/IRANSansWeb-Light.ttf);
+  src: url(../fonts/IRANSansWeb-Light.woff);
+  src: url(../fonts/IRANSansWeb-Light.woff2);
+}
+body,
+html {
+  direction: rtl;
+}
