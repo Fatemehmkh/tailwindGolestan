@@ -910,6 +910,14 @@ video {
   height: 340px;
 }
 
+.h-\[130px\] {
+  height: 130px;
+}
+
+.h-\[470px\] {
+  height: 470px;
+}
+
 .w-9\/12 {
   width: 75%;
 }
@@ -1003,6 +1011,10 @@ video {
   width: 390px;
 }
 
+.w-\[170x\] {
+  width: 170x;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1083,6 +1095,16 @@ video {
   row-gap: 10px;
 }
 
+.gap-x-\[\] {
+  -moz-column-gap: ;
+       column-gap: ;
+}
+
+.gap-x-\[20px\] {
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -1146,6 +1168,11 @@ video {
 .border-\[\#4c4c4c\] {
   --tw-border-opacity: 1;
   border-color: rgb(76 76 76 / var(--tw-border-opacity));
+}
+
+.border-\[\#b8b8b8\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(184 184 184 / var(--tw-border-opacity));
 }
 
 .border-l-\[\#665F5F\] {
@@ -1220,12 +1247,66 @@ video {
   background-color: rgb(16 81 83 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#vED1C24\] {
+  background-color: #vED1C24;
+}
+
+.bg-\[\#EEEFEF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 239 239 / var(--tw-bg-opacity));
+}
+
+.bg-\[\(\'\.\.\/\'\)\] {
+  background-color: ('../');
+}
+
+.bg-\[\(\'\.\.\/image\/bg\/header-back\.png\'\)\] {
+  background-color: ('../image/bg/header-back.png');
+}
+
+.bg-\[\(\'\/image\/bg\/header-back\.png\'\)\] {
+  background-color: ('/image/bg/header-back.png');
+}
+
+.bg-\[\(\'image\/bg\/header-back\.png\'\)\] {
+  background-color: ('image/bg/header-back.png');
+}
+
+.bg-\[blue\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 255 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
 .bg-\[url\(\.\.\/\.\.\/\.\.\/image\/sticky\/img-1\.png\)\] {
   background-image: url(../../../image/sticky/img-1.png);
+}
+
+.bg-\[url\(\)\] {
+  background-image: url();
+}
+
+.bg-\[url\(\.\.\/\)\] {
+  background-image: url(../);
+}
+
+.bg-\[url\(\.\.\/image\/\)\] {
+  background-image: url(../image/);
+}
+
+.bg-\[url\(\.\.\/image\/bg\/header-back\)\] {
+  background-image: url(../image/bg/header-back);
+}
+
+.bg-\[url\(\.\.\/image\/bg\/header-back\.pnj\)\] {
+  background-image: url(../image/bg/header-back.pnj);
+}
+
+.bg-\[url\(\.\.\/\.\.\/image\/bg\/header-back\.pnj\)\] {
+  background-image: url(../../image/bg/header-back.pnj);
 }
 
 .from-\[\#FBFBFB\] {
@@ -1397,6 +1478,18 @@ video {
 
 .text-\[17px\] {
   font-size: 17px;
+}
+
+.text-\[30px\] {
+  font-size: 30px;
+}
+
+.text-\[25px\] {
+  font-size: 25px;
+}
+
+.text-\[21px\] {
+  font-size: 21px;
 }
 
 .font-normal {
