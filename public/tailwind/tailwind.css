@@ -12,4 +12,6 @@
 body,
 html {
   direction: rtl;
+  margin: 0;
+  padding: 0;
 }
