@@ -17,7 +17,7 @@ html {
 }
 @layer components {
   .menu {
-    @apply w-full h-[100px] bg-[red] pt-[30px] pb-[20px] sticky top-0 z-[9999];
+    @apply w-full h-[100px] bg-[#2b2b2b] pt-[30px] pb-[20px] sticky top-0 z-[9999];
   }
   .image-menu {
     @apply absolute w-[170px] h-[105px] right-[210px] top-[50px];
@@ -36,15 +36,6 @@ html {
   }
   .EN {
     @apply block w-fit py-0 px-5 no-underline text-[#a5a4a4] font-[Golestan] text-base cursor-pointer leading-[20px] hover:text-white duration-300;
-  }
-  .sub-menu {
-    @apply w-[180px] h-[40vh] bg-[red] top-[70px] right-[calc(50% - 100px)] gap-y-[10px] absolute items-start pr-[15px];
-  }
-  .sub-sub-menu {
-    @apply w-fit h-[30px];
-  }
-  .sub-sub-menu-item {
-    @apply font-[Golestan] text-[#b5b5b5] opacity-90 hover:text-[white] duration-300;
   }
 }
 @layer components {
@@ -86,6 +77,9 @@ html {
   .explanation-of-food {
     @apply font-[Golestan] text-[15px] text-[#2b2b2b] opacity-70 text-justify mx-[20px] leading-7 mt-[20px];
   }
+  .btm-item {
+    @apply w-full h-fit ;
+  }
   .btm {
     @apply w-[100px] h-[40px] flex flex-col justify-center items-center border border-[lightgray] rounded-[8px] mt-[20px] mr-[20px] font-[Golestan] text-[15px] text-[#2b2b2b] opacity-80 duration-300 cursor-pointer hover:bg-[#ff0000] hover:text-white;
   }
@@ -93,5 +87,34 @@ html {
 @layer components {
   .products-box-movie {
     @apply w-[310px] h-fit bg-[pink];
+  }
+}
+@layer components {
+  .footer {
+    @apply w-full h-[500px] bg-[#2b2b2b] flex flex-col flex-nowrap justify-start items-center;
+  }
+  .footer-item {
+    @apply w-[80%] h-[85%] flex flex-row flex-wrap justify-center items-center gap-x-5;
+  }
+  .footer-box {
+    @apply w-[170px]  h-[360px] mt-[10px] flex flex-col flex-wrap justify-start items-center;
+  }
+  .image-of-footer {
+    @apply w-[130px] h-[100px] bg-cover;
+  }
+  .text-of-footer {
+    @apply h-[50px] border-y border-slate-300 w-full mt-[22px] flex flex-row flex-wrap justify-center items-center font-[Golestan] text-[whitesmoke];
+  }
+  .classification {
+    @apply w-full h-[150px] flex flex-col flex-nowrap justify-start gap-y-2 mt-[30px];
+  }
+  .classification-items {
+    @apply w-full font-[Golestan] text-[13px] text-[#a4a4a4];
+  }
+  .end-of-footer {
+    @apply w-[80%] h-[30%] font-[Golestan] text-[14px] flex flex-col flex-wrap justify-center items-center text-[#cfcdcd] font-normal;
+  }
+  .span-of-footer{
+    @apply font-normal text-[13px] text-[#868484];
   }
 }
