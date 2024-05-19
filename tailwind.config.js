@@ -4,7 +4,7 @@ export default {
   theme: {
     screens: {
       mobile: "0",
-      Desktop: "1000px",
+      desktop: "1000px",
     },
 
     extend: {},

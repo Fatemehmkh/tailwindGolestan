@@ -182,15 +182,133 @@ html {
 }
 @layer components {
   .introduce {
-    @apply w-full flex flex-col flex-wrap items-center justify-center mb-[70px];
+    @apply desktop:w-full desktop:flex desktop:flex-col desktop:flex-wrap desktop:items-center desktop:justify-center desktop:mb-[70px];
   }
   .introduce-item {
-    @apply w-1/2 mt-[50px];
+    @apply desktop:w-1/2 desktop:mt-[50px];
   }
   .heading-of-introduce {
-    @apply font-[Golestan] text-[red] text-xl font-bold mb-[15px];
+    @apply desktop:font-[Golestan] desktop:text-[red] desktop:text-xl desktop:font-bold desktop:mb-[15px];
   }
   .paragraph-of-introduce {
     @apply font-[Golestan] text-base opacity-60 leading-8 text-justify;
   }
+  .other-items-of-introduce {
+    @apply w-full mt-[120px] flex flex-row flex-nowrap justify-between gap-x-[15px];
+  }
+  .item-item-introduce {
+    @apply w-[180px] h-[260px] flex flex-col flex-wrap justify-center items-center gap-x-[15px] border-b border-solid border-gray-400;
+  }
+  .image-of-introduce {
+    @apply w-[180px] h-[180px] object-cover;
+  }
+  .caption-of-introduce {
+    @apply font-[Golestan] text-base text-[#2b2b2b] opacity-60 font-normal mt-[20px];
+  }
 }
+@layer components {
+  .rice-container {
+    @apply w-full h-[500px] bg-[#E9D69F] flex flex-col flex-nowrap justify-start mt-[18px] relative;
+  }
+  .image-of-container {
+    @apply object-cover w-full h-[480px];
+  }
+  .little-red-box {
+    @apply w-[300px] h-[100px] bg-[#ED1C24] flex flex-col flex-nowrap justify-start items-start pt-[10px] pr-[30px] absolute left-[57%] bottom-0 gap-y-[13px];
+  }
+  .text-in-box {
+    @apply font-[Golestan] text-[whitesmoke] text-3xl font-normal;
+  }
+  .span-in-box {
+    @apply font-[Golestan] text-[whitesmoke] text-sm font-normal;
+  }
+}
+@layer components {
+  .persian {
+    @apply w-full h-[400px] flex flex-row flex-wrap justify-center items-center;
+  }
+  .persian-item {
+    @apply w-[48%] h-[350px] mt-[25px];
+  }
+  .heading-of-persian {
+    @apply font-[Golestan] text-xl font-bold text-[red] mb-[15px];
+  }
+  .paragraph-of-persian {
+    @apply font-[Golestan] text-[15px] text-[#2b2b2b] opacity-70 leading-9 text-justify;
+  }
+  .btn-of-persian {
+    @apply w-[140px] h-[40px] font-[Golestan] text-[16px] border border-gray-300 rounded-[8px] bg-[white] mt-[20px] text-[#888888] duration-300 hover:text-[white] hover:bg-[red];
+  }
+}
+@layer components {
+  .box-tea {
+    @apply w-full h-[500px] bg-[#e9d69f] flex flex-col flex-wrap justify-start relative;
+  }
+  .image-of-box {
+    @apply w-full h-[480px] object-cover;
+  }
+}
+@layer components {
+  .history {
+    @apply w-full h-[450px] flex flex-row flex-wrap justify-center;
+  }
+  .history-items {
+    @apply w-[45%] h-[450px];
+  }
+  .history-first-item {
+    @apply w-full h-[50%] pt-[30px] pr-[20px];
+  }
+  .heading-of-history {
+    @apply font-[Golestan] text-[20px] text-[#ff0000] mb-[10px] font-bold;
+  }
+  .paragraph-of-history {
+    @apply font-[Golestan] text-[15px] text-[#2b2b2b] opacity-70 text-justify leading-[35px];
+  }
+  .history-second-item {
+    @apply w-full h-[50%] pr-[20px];
+  }
+  .btn-of-history {
+    @apply w-[140px] h-[40px] font-[Golestan] text-[16px] border border-gray-300 rounded-[8px] bg-[white] mt-[20px] text-[#888888] duration-300 hover:text-[white] hover:bg-[red];
+  }
+}
+@layer components {
+  .pistachio {
+    @apply w-full h-[500px] bg-[#e9d69f] flex flex-col flex-nowrap justify-start mt-[18px] relative;
+  }
+  .image-of-pistachio {
+    @apply object-cover w-full h-[480px];
+  }
+  .pictachio-items {
+    @apply w-[300px] h-[100px] bg-[#ed1c24] flex flex-col flex-nowrap justify-start items-start pt-[10px] pr-[30px] absolute left-[57%] bottom-0 gap-y-[13px];
+  }
+  .heading-of-pistachio {
+    @apply font-[Golestan] text-[whitesmoke] text-[26px] font-normal;
+  }
+  .span-of-pistachio {
+    @apply font-[Golestan] text-[whitesmoke] text-[14px];
+  }
+}
+@layer components {
+  .nuts {
+    @apply w-full h-[450px] flex flex-row flex-wrap justify-center;
+  }
+  .nuts-items {
+    @apply w-[45%] h-[450px];
+  }
+  .nuts-first-item {
+    @apply w-full h-[50%] pt-[30px] pr-[20px] flex flex-col flex-wrap justify-center;
+  }
+  .heading-of-nuts {
+    @apply font-[Golestan] text-[20px] text-[#ff0000] mb-[10px] font-bold;
+  }
+  .paragraph-of-nuts {
+    @apply font-[Golestan] text-[16px] text-[#2b2b2b] opacity-70 text-justify leading-8;
+  }
+  .nuts-second-item {
+    @apply w-full h-[50%] pr-[20px];
+  }
+  .btn-of-nuts {
+    @apply w-[140px] h-[40px] font-[Golestan] text-[16px] border border-gray-300 rounded-[8px] bg-[white] mt-[20px] text-[#888888] duration-300 hover:text-[white] hover:bg-[red];
+  }
+}
+
