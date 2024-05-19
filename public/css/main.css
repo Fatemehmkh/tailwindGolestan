@@ -695,6 +695,9 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.sub-menu{
+}
+
 .magazine {
   margin-top: 30px;
   display: flex;
@@ -971,12 +974,28 @@ video {
   bottom: -23%;
 }
 
+.left-\[19\%\] {
+  left: 19%;
+}
+
+.left-\[37\%\] {
+  left: 37%;
+}
+
+.left-\[43\%\] {
+  left: 43%;
+}
+
 .left-\[57\%\] {
   left: 57%;
 }
 
 .right-\[210px\] {
   right: 210px;
+}
+
+.right-\[36\%\] {
+  right: 36%;
 }
 
 .top-0 {
@@ -987,8 +1006,8 @@ video {
   top: 50px;
 }
 
-.top-\[70px\] {
-  top: 70px;
+.top-\[83px\] {
+  top: 83px;
 }
 
 .z-\[9999\] {
@@ -1094,6 +1113,10 @@ video {
 
 .h-\[180px\] {
   height: 180px;
+}
+
+.h-\[20vh\] {
+  height: 20vh;
 }
 
 .h-\[250px\] {
@@ -1209,10 +1232,6 @@ video {
   width: 50%;
 }
 
-.w-9\/12 {
-  width: 75%;
-}
-
 .w-\[100px\] {
   width: 100px;
 }
@@ -1275,6 +1294,10 @@ video {
 
 .w-\[80\%\] {
   width: 80%;
+}
+
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .w-fit {
@@ -1343,10 +1366,6 @@ video {
 
 .gap-y-2 {
   row-gap: 0.5rem;
-}
-
-.gap-y-\[10px\] {
-  row-gap: 10px;
 }
 
 .gap-y-\[13px\] {
@@ -1507,10 +1526,6 @@ video {
   padding-bottom: 0px;
 }
 
-.pb-\[20px\] {
-  padding-bottom: 20px;
-}
-
 .pr-\[100px\] {
   padding-right: 100px;
 }
@@ -1537,6 +1552,10 @@ video {
 
 .pt-\[30px\] {
   padding-top: 30px;
+}
+
+.pt-\[60px\] {
+  padding-top: 60px;
 }
 
 .pt-\[80px\] {
@@ -1632,12 +1651,12 @@ video {
   line-height: 2.5rem;
 }
 
-.leading-6 {
-  line-height: 1.5rem;
-}
-
 .leading-8 {
   line-height: 2rem;
+}
+
+.leading-9 {
+  line-height: 2.25rem;
 }
 
 .leading-\[20px\] {
@@ -1759,14 +1778,20 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-\[400ms\] {
+  transition-property: 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
-.delay-300 {
-  transition-delay: 300ms;
+.delay-200 {
+  transition-delay: 200ms;
 }
 
 .duration-300 {
@@ -1818,4 +1843,24 @@ html {
 
 .group:hover .group-hover\:block {
   display: block;
+}
+
+.group:hover .group-hover\:flex {
+  display: flex;
+}
+
+.group:hover .group-hover\:flex-col {
+  flex-direction: column;
+}
+
+.group:hover .group-hover\:flex-wrap {
+  flex-wrap: wrap;
+}
+
+.group:hover .group-hover\:gap-y-2 {
+  row-gap: 0.5rem;
+}
+
+.group:hover .group-hover\:leading-9 {
+  line-height: 2.25rem;
 }

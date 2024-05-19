@@ -17,7 +17,7 @@ html {
 }
 @layer components {
   .menu {
-    @apply w-full h-[100px] bg-[#2b2b2b] pt-[30px] pb-[20px] sticky top-0 z-[9999];
+    @apply w-full h-[100px] bg-[yellow] pt-[30px] pb-[20px] sticky top-0 z-[9999];
   }
   .image-menu {
     @apply absolute w-[170px] h-[105px] right-[210px] top-[50px];
@@ -26,7 +26,7 @@ html {
     @apply w-full h-[100px] flex flex-nowrap flex-row justify-center items-center;
   }
   .nav-item {
-    @apply w-fit h-[30px] flex flex-wrap flex-row justify-center items-center relative border-l border-solid border-l-[#665F5F] mb-[30px];
+    @apply w-fit h-[30px] flex flex-wrap group flex-row justify-center items-center relative border-l border-solid border-l-[#665F5F] mb-[30px];
   }
   .nav-link {
     @apply block w-fit py-0 px-5 no-underline text-[#c4bcbc] font-[Golestan]  text-base cursor-pointer leading-[20px] hover:text-[white] duration-300;
@@ -78,7 +78,7 @@ html {
     @apply font-[Golestan] text-[15px] text-[#2b2b2b] opacity-70 text-justify mx-[20px] leading-7 mt-[20px];
   }
   .btm-item {
-    @apply w-full h-fit ;
+    @apply w-full h-fit;
   }
   .btm {
     @apply w-[100px] h-[40px] flex flex-col justify-center items-center border border-[lightgray] rounded-[8px] mt-[20px] mr-[20px] font-[Golestan] text-[15px] text-[#2b2b2b] opacity-80 duration-300 cursor-pointer hover:bg-[#ff0000] hover:text-white;
@@ -114,7 +114,7 @@ html {
   .end-of-footer {
     @apply w-[80%] h-[30%] font-[Golestan] text-[14px] flex flex-col flex-wrap justify-center items-center text-[#cfcdcd] font-normal;
   }
-  .span-of-footer{
+  .span-of-footer {
     @apply font-normal text-[13px] text-[#868484];
   }
 }
