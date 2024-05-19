@@ -14,287 +14,78 @@
   <body>
     <!--start project-->
     <!--start menu-->
-    <div class="w-full h-[100px] bg-[#2b2b2b] sticky top-0 z-[9999]">
+    <div class="menu">
       <img
-        class="absolute w-[170px] h-[105px] right-[210px] top-[50px]"
+        class="image-menu"
         src="./public/image/logo/logo_prev_ui.png"
         alt=""
       />
-      <nav
-        class="w-full h-[100px] pt-[60px] flex flex-nowrap flex-row justify-center items-center relative"
-      >
-        <div
-          class="w-fit h-[30px] flex flex-wrap flex-row justify-center items-center border-l relative border-solid border-l-[#665F5F] mb-[30px] pr-[100px]"
-        >
-          <a
-            class="block w-fit py-0 px-5 no-underline text-[#a5a4a4] font-[Golestan] text-base cursor-pointer leading-[20px] hover:text-white duration-300"
-            href="#"
-            >صفحه ی اصلی</a
-          >
+      <nav class="menu-nav">
+        <div class="nav-item">
+          <a href="index.html" class="nav-link-main">صفحه ی اصلی</a>
         </div>
-        <div
-          class="w-fit h-[30px] group duration-300 delay-200 flex flex-wrap flex-row justify-center items-center border-l border-solid border-l-[#665F5F] mb-[30px]"
-        >
-          <a
-            class="block w-fit py-0 px-5 no-underline text-[#a5a4a4] font-[Golestan] text-base cursor-pointer leading-[20px] hover:text-white duration-300"
-            href="#"
-            >شرکت گلستان</a
-          >
-          <div
-            class="w-[180px] h-[40vh] bg-[#2b2b2b] absolute top-[83px] right-[36%] flex-wrap items-start pr-[15px] pt-[10px] hidden group-hover:flex group-hover:flex-col group-hover:flex-wrap group-hover:gap-y-2"
-          >
-            <div class="w-fit h-[30px]">
-              <a
-                class="font-[Golestan] text-[#b5b5b5] opacity-90 hover:text-[white] duration-300"
-                href="#"
-                >معرفی شرکت</a
-              >
-            </div>
-            <div class="w-fit h-[30px]">
-              <a
-                class="font-[Golestan] text-[#b5b5b5] opacity-90 hover:text-[white] duration-300"
-                href="#"
-                >تاریخچه گلستان</a
-              >
-            </div>
-            <div class="w-fit h-[30px]">
-              <a
-                class="font-[Golestan] text-[#b5b5b5] opacity-90 hover:text-[white] duration-300"
-                href="#"
-                >اخبار و اطلاعیه ها</a
-              >
-            </div>
-            <div class="w-fit h-[30px]">
-              <a
-                class="font-[Golestan] text-[#b5b5b5] opacity-90 hover:text-[white] duration-300"
-                href="#"
-                >مسئولیت های اجتماعی</a
-              >
-            </div>
-            <div class="w-fit h-[30px]">
-              <a
-                class="font-[Golestan] text-[#b5b5b5] opacity-90 hover:text-[white] duration-300"
-                href="#"
-                >سازمان فروش</a
-              >
-            </div>
-            <div class="w-fit h-[30px]">
-              <a
-                class="font-[Golestan] text-[#b5b5b5] opacity-90 hover:text-[white] duration-300"
-                href="#"
-                >سازمان توزیع</a
-              >
-            </div>
-            <div class="w-fit h-[30px]">
-              <a
-                class="font-[Golestan] text-[#b5b5b5] opacity-90 hover:text-[white] duration-300"
-                href="#"
-                >برندها</a
-              >
+        <div class="nav-item">
+          <a href="#" class="nav-link">شرکت گلستان</a>
+          <div class="sub-menu-company">
+            <div class="sub-menu-item">
+              <a href="" class="sub-menu-link">معرفی شرکت</a>
+              <a href="" class="sub-menu-link">تاریخچه گلستان</a>
+              <a href="" class="sub-menu-link">اخبار و اطلاعیه ها</a>
+              <a href="" class="sub-menu-link">مسئوليت‌های اجتماعی</a>
+              <a href="" class="sub-menu-link">سازمان فروش</a>
+              <a href="" class="sub-menu-link">سازمان توزیع</a>
+              <a href="" class="sub-menu-link">برندها</a>
             </div>
           </div>
         </div>
-        <div
-          class="w-fit h-[30px] group transition-all flex flex-wrap flex-row justify-center items-center border-l border-solid border-l-[#665F5F] mb-[30px]"
-        >
-          <a
-            class="block w-fit py-0 px-5 no-underline text-[#a5a4a4] font-[Golestan] text-base cursor-pointer leading-[20px] hover:text-white duration-300"
-            href="#"
-            >محصولات</a
-          >
-          <div
-            class="w-[190px] h-[70vh] bg-[#2b2b2b] absolute top-[83px] left-[43%] items-start pr-[15px] pt-[10px] hidden group-hover:flex group-hover:flex-col group-hover:flex-wrap group-hover:gap-y-2"
-          >
-            <div class="w-fit h-[30px]">
-              <a
-                class="font-[Golestan] text-[#b5b5b5] opacity-90 hover:text-[white] duration-300"
-                href="#"
-                >چای</a
-              >
-            </div>
-            <div class="w-fit h-[30px]">
-              <a
-                class="font-[Golestan] text-[#b5b5b5] opacity-90 hover:text-[white] duration-300"
-                href="#"
-                >ناتس</a
-              >
-            </div>
-            <div class="w-fit h-[30px]">
-              <a
-                class="font-[Golestan] text-[#b5b5b5] opacity-90 hover:text-[white] duration-300"
-                href="#"
-                >ادویه و چاشنی</a
-              >
-            </div>
-            <div class="w-fit h-[30px]">
-              <a
-                class="font-[Golestan] text-[#b5b5b5] opacity-90 hover:text-[white] duration-300"
-                href="#"
-                >برنج</a
-              >
-            </div>
-            <div class="w-fit h-[30px]">
-              <a
-                class="font-[Golestan] text-[#b5b5b5] opacity-90 hover:text-[white] duration-300"
-                href="#"
-                >زعفران و زرشک</a
-              >
-            </div>
-            <div class="w-fit h-[30px]">
-              <a
-                class="font-[Golestan] text-[#b5b5b5] opacity-90 hover:text-[white] duration-300"
-                href="#"
-                >دمنوش</a
-              >
-            </div>
-            <div class="w-fit h-[30px]">
-              <a
-                class="font-[Golestan] text-[#b5b5b5] opacity-90 hover:text-[white] duration-300"
-                href="#"
-                >حبوبات و غلات</a
-              >
-            </div>
-            <div class="w-fit h-[30px]">
-              <a
-                class="font-[Golestan] text-[#b5b5b5] opacity-90 hover:text-[white] duration-300"
-                href="#"
-                >عصاره های گیاهی گلستان</a
-              >
-            </div>
-            <div class="w-fit h-[30px]">
-              <a
-                class="font-[Golestan] text-[#b5b5b5] opacity-90 hover:text-[white] duration-300"
-                href="#"
-                >قند و شکر</a
-              >
-            </div>
-            <div class="w-fit h-[30px]">
-              <a
-                class="font-[Golestan] text-[#b5b5b5] opacity-90 hover:text-[white] duration-300"
-                href="#"
-                >هاتی نودل</a
-              >
-            </div>
-            <div class="w-fit h-[30px]">
-              <a
-                class="font-[Golestan] text-[#b5b5b5] opacity-90 hover:text-[white] duration-300"
-                href="#"
-                >سایر محصولات</a
-              >
-            </div>
-            <div class="w-fit h-[30px]">
-              <a
-                class="font-[Golestan] text-[#b5b5b5] opacity-90 hover:text-[white] duration-300"
-                href="#"
-                >گل کیس</a
-              >
+        <div class="nav-item">
+          <a href="#" class="nav-link">محصولات</a>
+          <div class="sub-menu-category">
+            <div class="sub-menu-item">
+              <a href="" class="sub-menu-link">چای</a>
+              <a href="" class="sub-menu-link">ناتس</a>
+              <a href="" class="sub-menu-link">ادویه و چاشنی</a>
+              <a href="" class="sub-menu-link">برنج</a>
+              <a href="" class="sub-menu-link">زعفران و زرشک</a>
+              <a href="" class="sub-menu-link">دمنوش</a>
+              <a href="" class="sub-menu-link">حبوبات و غلات</a>
+              <a href="" class="sub-menu-link">عصاره های گیاهی گلستان</a>
+              <a href="" class="sub-menu-link">قند و شکر</a>
+              <a href="" class="sub-menu-link">هاتی نودل</a>
+              <a href="" class="sub-menu-link">سایر محصولات</a>
             </div>
           </div>
         </div>
-        <div
-          class="w-fit h-[30px] group flex flex-wrap flex-row justify-center items-center border-l border-solid border-l-[#665F5F] mb-[30px]"
-        >
-          <a
-            class="block w-fit py-0 px-5 no-underline text-[#a5a4a4] font-[Golestan] text-base cursor-pointer leading-[20px] hover:text-white duration-300"
-            href="#"
-            >وبلاگ</a
-          >
-          <div
-            class="w-[180px] h-[30vh] bg-[#2b2b2b] absolute top-[83px] left-[37%] pr-[15px] pt-[10px] hidden group-hover:flex group-hover:flex-col group-hover:flex-wrap group-hover:gap-y-2 transition-[400ms]"
-          >
-            <div class="w-fit h-[30px]">
-              <a
-                class="font-[Golestan] text-[#b5b5b5] opacity-90 hover:text-[white] duration-300"
-                href="magazine.html"
-                >مجله گلستان</a
-              >
-            </div>
-            <div class="w-fit h-[30px]">
-              <a
-                class="font-[Golestan] text-[#b5b5b5] opacity-90 hover:text-[white] duration-300"
-                href="#"
-                >فرهنگ غذایی</a
-              >
-            </div>
-            <div class="w-fit h-[30px]">
-              <a
-                class="font-[Golestan] text-[#b5b5b5] opacity-90 hover:text-[white] duration-300"
-                href="#"
-                >سلامت غذایی</a
-              >
-            </div>
-            <div class="w-fit h-[30px]">
-              <a
-                class="font-[Golestan] text-[#b5b5b5] opacity-90 hover:text-[white] duration-300"
-                href="#"
-                >تاریخچه</a
-              >
-            </div>
-            <div class="w-fit h-[30px]">
-              <a
-                class="font-[Golestan] text-[#b5b5b5] opacity-90 hover:text-[white] duration-300"
-                href="#"
-                >میزبانی و دیزاین</a
-              >
+        <div class="nav-item">
+          <a href="#" class="nav-link">وبلاگ</a>
+          <div class="sub-menu-weblog">
+            <div class="sub-menu-item">
+              <a href="" class="sub-menu-link">مجله گلستان</a>
+              <a href="" class="sub-menu-link">فرهنگ غذایی</a>
+              <a href="" class="sub-menu-link">سلامت غذایی</a>
+              <a href="" class="sub-menu-link">تاریخچه</a>
+              <a href="" class="sub-menu-link">میزبانی و دیزاین</a>
             </div>
           </div>
         </div>
-        <div
-          class="w-fit h-[30px] flex flex-wrap flex-row justify-center items-center border-l border-solid border-l-[#665F5F] mb-[30px]"
-        >
-          <a
-            class="block w-fit py-0 px-5 no-underline text-[#a5a4a4] font-[Golestan] text-base cursor-pointer leading-[20px] hover:text-white duration-300"
-            href="#"
-            >قرعه کشی</a
-          >
+        <div class="nav-item">
+          <a href="#" class="nav-link">قرعه‌کشی</a>
         </div>
-        <div
-          class="w-fit h-[30px] flex flex-wrap flex-row justify-center items-center border-l border-solid border-l-[#665F5F] mb-[30px]"
-        >
-          <a
-            class="block w-fit py-0 px-5 no-underline text-[#a5a4a4] font-[Golestan] text-base cursor-pointer leading-[20px] hover:text-white duration-300"
-            href="#"
-            >استخدام</a
-          >
+        <div class="nav-item">
+          <a href="#" class="nav-link">استخدام</a>
         </div>
-        <div
-          class="w-fit h-[30px] group flex flex-wrap flex-row justify-center items-center border-l border-solid border-l-[#665F5F] mb-[30px]"
-        >
-          <a
-            class="block w-fit py-0 px-5 no-underline text-[#a5a4a4] font-[Golestan] text-base cursor-pointer leading-[20px] hover:text-white duration-300"
-            href="#"
-            >تماس با ما</a
-          >
-          <div
-            class="w-[180px] h-[20vh] bg-[#2b2b2b] duration-300 absolute top-[83px] left-[19%] pr-[15px] pt-[10px] hidden group-hover:block group-hover:leading-9 transition-[400ms]"
-          >
-            <div class="w-fit h-[30px]">
-              <a
-                class="block font-[Golestan] text-[#b5b5b5] opacity-90 hover:text-[white] duration-300"
-                href="#"
-                >دفتر مرکزی</a
-              >
-              <a
-                class="block font-[Golestan] text-[#b5b5b5] opacity-90 hover:text-[white] duration-300"
-                href="#"
-                >صدای مصرف کنندگان</a
-              >
-              <a
-                class="block font-[Golestan] text-[#b5b5b5] opacity-90 hover:text-[white] duration-300"
-                href="#"
-                >ارتباط با مشترکین</a
-              >
+        <div class="nav-item">
+          <a href="#" class="nav-link">تماس با ما</a>
+          <div class="sub-menu-call">
+            <div class="sub-menu-item">
+              <a href="" class="sub-menu-link">دفتر مرکزی</a>
+              <a href="" class="sub-menu-link">صدای مصرف‌کنندگان</a>
+              <a href="" class="sub-menu-link">ارتباط با مشترکین</a>
             </div>
           </div>
         </div>
-        <div
-          class="w-fit h-[30px] flex flex-wrap flex-row justify-center items-center mb-[30px]"
-        >
-          <a
-            class="block w-fit py-0 px-5 no-underline text-[#a5a4a4] font-[Golestan] text-base cursor-pointer leading-[20px] hover:text-white duration-300"
-            href="#"
-            >EN</a
-          >
+        <div class="nav-EN">
+          <a href="#" class="EN">EN</a>
         </div>
       </nav>
     </div>
@@ -880,19 +671,24 @@
           <div
             class="w-full h-[150px] flex flex-col flex-nowrap justify-start gap-y-2 mt-[30px]"
           >
-            <span class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
+            <span
+              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
               >تی بگ بلک لاین</span
             >
-            <span class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
+            <span
+              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
               >تی بگ ارل گرل</span
             >
-            <span class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
+            <span
+              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
               >دمنوش نعنا</span
             >
-            <span class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
+            <span
+              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
               >دمنوش بابونه</span
             >
-            <span class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
+            <span
+              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
               >دمنوش چای سبز</span
             >
           </div>
@@ -913,19 +709,24 @@
           <div
             class="w-full h-[150px] flex flex-col flex-nowrap justify-start gap-y-2 mt-[30px]"
           >
-            <span class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
+            <span
+              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
               >زعفران ممتاز خراسان</span
             >
-            <span class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
+            <span
+              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
               >ادویه کاری</span
             >
-            <span class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
+            <span
+              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
               >ادویه ماست و خیار</span
             >
-            <span class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
+            <span
+              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
               >فلفل سیاه خالص</span
             >
-            <span class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
+            <span
+              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
               >زردچوبه ممتاز</span
             >
           </div>
@@ -946,19 +747,24 @@
           <div
             class="w-full h-[150px] flex flex-col flex-nowrap justify-start gap-y-2 mt-[30px]"
           >
-            <span class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
+            <span
+              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
               >لوبیا قرمز ممتاز</span
             >
-            <span class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
+            <span
+              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
               >لوبیا چیتی گلستان</span
             >
-            <span class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
+            <span
+              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
               >عدس کانادایی</span
             >
-            <span class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
+            <span
+              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
               >نخود زودپز کرمانشاه</span
             >
-            <span class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
+            <span
+              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
               >لوبیا سفید گلستان</span
             >
           </div>
