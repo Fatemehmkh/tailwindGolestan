@@ -596,8 +596,6 @@ video {
   width: 100%;
   --tw-bg-opacity: 1;
   background-color: rgb(43 43 43 / var(--tw-bg-opacity));
-  padding-top: 30px;
-  padding-bottom: 20px;
 }
 
 .image-menu {
@@ -616,6 +614,7 @@ video {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
+  padding-top: 60px;
 }
 
 .nav-item {
@@ -693,9 +692,6 @@ video {
 .EN:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.sub-menu{
 }
 
 .magazine {

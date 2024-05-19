@@ -17,16 +17,16 @@ html {
 }
 @layer components {
   .menu {
-    @apply w-full h-[100px] bg-[yellow] pt-[30px] pb-[20px] sticky top-0 z-[9999];
+    @apply w-full h-[100px] bg-[#2b2b2b]  sticky top-0 z-[9999];
   }
   .image-menu {
     @apply absolute w-[170px] h-[105px] right-[210px] top-[50px];
   }
   .menu-nav {
-    @apply w-full h-[100px] flex flex-nowrap flex-row justify-center items-center;
+    @apply w-full h-[100px] flex flex-nowrap flex-row justify-center items-center pt-[60px];
   }
   .nav-item {
-    @apply w-fit h-[30px] flex flex-wrap group flex-row justify-center items-center relative border-l border-solid border-l-[#665F5F] mb-[30px];
+    @apply w-fit h-[30px] flex flex-wrap flex-row justify-center items-center relative border-l border-solid border-l-[#665F5F] mb-[30px];
   }
   .nav-link {
     @apply block w-fit py-0 px-5 no-underline text-[#c4bcbc] font-[Golestan]  text-base cursor-pointer leading-[20px] hover:text-[white] duration-300;
