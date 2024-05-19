@@ -15,6 +15,14 @@ html {
   margin: 0;
   padding: 0;
 }
+@layer base {
+  h1,
+  p,
+  h5,
+  h2 {
+    @apply font-[Golestan] font-normal;
+  }
+}
 @layer components {
   .menu {
     @apply w-full h-[100px] bg-[#2b2b2b]  sticky top-0 z-[9999];
@@ -118,11 +126,6 @@ html {
   }
 }
 @layer components {
-  .products-box-movie {
-    @apply w-[310px] h-fit bg-[pink];
-  }
-}
-@layer components {
   .footer {
     @apply w-full h-[500px] bg-[#2b2b2b] flex flex-col flex-nowrap justify-start items-center;
   }
@@ -149,5 +152,45 @@ html {
   }
   .span-of-footer {
     @apply font-normal text-[13px] text-[#868484];
+  }
+}
+@layer components {
+  .lottery {
+    @apply w-full h-[420px] bg-gradient-to-r from-[#FBFBFB] to-[#D2D2D2] flex flex-row justify-center items-center;
+  }
+  .lottery-right {
+    @apply w-[40%] h-[full] flex flex-col flex-wrap justify-center pr-[100px];
+  }
+  .heading-of-lottery {
+    @apply w-fit text-[red] text-3xl mb-[10px];
+  }
+  .second-heading-of-lottery {
+    @apply w-fit text-[#2b2b2b]  text-lg opacity-[0.8] mb-[15px];
+  }
+  .paragraph-of-lottery {
+    @apply w-[88%] text-[#2b2b2b]  text-[15px] opacity-60 mb-[10px] leading-9;
+  }
+  .btm-of-lottery {
+    @apply block w-[120px] h-[40px] border border-gray-300 rounded-lg font-[Golestan] text-sm text-[#2b2b2b] opacity-90 leading-10 text-center cursor-pointer mt-[15px] transition-[300ms] bg-white hover:bg-[red] hover:text-white;
+  }
+  .lottery-left {
+    @apply w-[40%] h-[320px] flex flex-row justify-center;
+  }
+  .image-of-lottery {
+    @apply w-[330px] h-[320px] object-cover;
+  }
+}
+@layer components {
+  .introduce {
+    @apply w-full flex flex-col flex-wrap items-center justify-center mb-[70px];
+  }
+  .introduce-item {
+    @apply w-1/2 mt-[50px];
+  }
+  .heading-of-introduce {
+    @apply font-[Golestan] text-[red] text-xl font-bold mb-[15px];
+  }
+  .paragraph-of-introduce {
+    @apply font-[Golestan] text-base opacity-60 leading-8 text-justify;
   }
 }
