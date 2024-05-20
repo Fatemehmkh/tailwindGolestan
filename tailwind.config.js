@@ -6,7 +6,6 @@ export default {
       mobile: "0",
       desktop: "1000px",
     },
-
     extend: {},
   },
   plugins: [],

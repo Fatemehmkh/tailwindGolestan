@@ -112,9 +112,7 @@
         />
       </div>
     </div>
-    <hr
-      style="width: 100%; color: rgb(139, 43, 43); margin-top: 15px; size: 2px"
-    />
+    <div class="hr-lottery"></div>
     <!--end lottery-->
     <!--start introduce-->
     <div class="introduce">
@@ -183,7 +181,7 @@
         </div>
       </div>
     </div>
-    <hr style="width: 100%; color: lightgray; align-items: center" />
+    <div class="hr-introduce"></div>
     <!--end introduce-->
     <!-- start container -->
     <div class="rice-container">
@@ -197,7 +195,7 @@
         <span class="span-in-box">معرفی محصول</span>
       </div>
     </div>
-    <hr style="width: 100%; color: lightgray; margin-top: 35px" />
+    <div class="line-container"></div>
     <!-- end container -->
     <!-- start persian -->
     <div class="persian">
@@ -224,7 +222,7 @@
         <span class="span-in-box">معرفی محصول</span>
       </div>
     </div>
-    <hr style="width: 100%; color: lightgray; margin-top: 35px" />
+    <div class="line-tea"></div>
     <!-- end box -->
     <!-- start history -->
     <div class="history">
@@ -264,7 +262,7 @@
         <span class="span-of-pistachio">معرفی محصول</span>
       </div>
     </div>
-    <hr style="width: 100%; color: lightgray; margin-top: 35px" />
+    <div class="line-pistachio"></div>
     <!-- end pistachio -->
     <!-- start nuts -->
     <div class="nuts">
@@ -290,143 +288,89 @@
     </div>
     <!-- end nuts -->
     <!-- start sticky-->
-    <div class="sticky"></div>
+    <div class="bg-sticky" class=""></div>
     <!-- end sticky -->
     <!-- start magazine -->
-    <div
-      class="w-full h-[120px] flex flex-col flex-wrap justify-center pr-[300px]"
-    >
-      <h2
-        class="w-full h-fit font-[Golestan] font-bold text-[20px] text-[#ff0000]"
-      >
-        مجله گلستان
-      </h2>
+    <div class="magazine">
+      <h2 class="heading-of-magazine">مجله گلستان</h2>
     </div>
     <!-- end magazine -->
     <!-- start foods -->
-    <div
-      class="w-full h-[750px] bg-[#cde4b0] flex flex-row flex-wrap justify-center items-center gap-x-[10px]"
-    >
-      <div
-        class="w-[310px] h-[600px] bg-[white] shadow-xl flex flex-col justify-start gap-y-10px"
-      >
-        <div class="w-[310px] h-[300px]">
+    <div class="food">
+      <div class="food-containers">
+        <div class="food-box">
           <img
-            class="w-[310px] h-[300px] object-cover hover:opacity-80"
+            class="image-of-food"
             src="./public/image/foods/img-3.png"
             alt=""
           />
         </div>
-        <div class="w-full h-[60px] flex flex-col justify-center">
-          <h5
-            class="font-[Golestan] text-[20px] text-[#ed1c24] font-normal mr-[20px]"
-          >
-            ماکارونی با سبزیجات
-          </h5>
+        <div class="header-box-food">
+          <h5 class="header-food">ماکارونی با سبزیجات</h5>
         </div>
-        <div class="w-full h-[140px]">
-          <p
-            class="font-[Golestan] text-[15px] text-[#2b2b2b] opacity-70 text-justify mx-[20px] leading-8"
-          >
+        <div class="explain-of-food">
+          <p class="paragraph-of-food">
             ابتدا ماکارانی‌ها را در ظرفی‌ به‌ همراه‌ آب‌، روغن‌ مایع‌ و نمک‌
             می‌ریزیم‌ تا کمی‌ بپزد. در این‌ حین‌ پیازها را خرد کرده‌ و روی‌
             روغن‌ تفت‌ می‌دهیم‌ تا طلایی‌ شود…
           </p>
         </div>
-        <div
-          class="w-[100px] h-[40px] flex flex-col justify-center items-center border border-[lightgray] rounded-[8px] mr-[20px] font-[Golestan] text-[15px] text-[#2b2b2b] opacity-80 duration-300 cursor-pointer hover:bg-[#ff0000] hover:text-white"
-        >
-          ادامه مطلب
-        </div>
+        <div class="btn-food">ادامه مطلب</div>
       </div>
-      <div
-        class="w-[310px] h-[600px] bg-[white] shadow-xl flex flex-col justify-start gap-y-10px"
-      >
-        <div class="w-[310px] h-[300px]">
+      <div class="food-containers">
+        <div class="food-box">
           <img
-            class="w-[310px] h-[300px] object-cover hover:opacity-80"
+            class="image-of-food"
             src="./public/image/foods/img-2.png"
             alt=""
           />
         </div>
-        <div class="w-full h-[60px] flex flex-col justify-center">
-          <h5
-            class="font-[Golestan] text-[20px] text-[#ed1c24] font-normal mr-[20px]"
-          >
-            سوپ مکزیکی
-          </h5>
+        <div class="header-box-food">
+          <h5 class="header-food">سوپ مکزیکی</h5>
         </div>
-        <div class="w-full h-[140px]">
-          <p
-            class="font-[Golestan] text-[15px] text-[#2b2b2b] opacity-70 text-justify mx-[20px] leading-8"
-          >
+        <div class="explain-of-food">
+          <p class="paragraph-of-food">
             گوشت بوقلمون را در یک ماهیتابه بزرگ ریخته، آب روی آن بریزید تا روی
             آن را بپوشاند و به مدت نیم ساعت آن را بپزید. گوشت را از مایع آن
             بیرون آورده…
           </p>
         </div>
-        <div
-          class="w-[100px] h-[40px] flex flex-col justify-center items-center border border-[lightgray] rounded-[8px] mr-[20px] font-[Golestan] text-[15px] text-[#2b2b2b] opacity-80 cursor-pointer duration-300 hover:bg-[#ff0000] hover:text-white"
-        >
-          ادامه مطلب
-        </div>
+        <div class="btn-food">ادامه مطلب</div>
       </div>
-      <div
-        class="w-[310px] h-[600px] bg-[white] shadow-xl flex flex-col justify-start gap-y-10px"
-      >
-        <div class="w-[310px] h-[300px]">
+      <div class="food-containers">
+        <div class="food-box">
           <img
-            class="w-[310px] h-[300px] object-cover hover:opacity-80"
+            class="image-of-food"
             src="./public/image/foods/img-1.png"
             alt=""
           />
         </div>
-        <div class="w-full h-[60px] flex flex-col justify-center">
-          <h5
-            class="font-[Golestan] text-[20px] text-[#ed1c24] font-normal mr-[20px]"
-          >
-            چیلاکیله
-          </h5>
+        <div class="header-box-food">
+          <h5 class="header-food">چیلاکیله</h5>
         </div>
-        <div class="w-full h-[140px]">
-          <p
-            class="font-[Golestan] text-[15px] text-[#2b2b2b] opacity-70 text-justify mx-[20px] leading-8"
-          >
+        <div class="explain-of-food">
+          <p class="paragraph-of-food">
             احتمالا نام چیلا کیله را نشنیده باشید ولی اگر یکبار این غذای
             فوق‌العاده خوشمزه را تهیه کنید و نوش جان کنیدجزئی جدانشدنی از فهرست
           </p>
         </div>
-        <div
-          class="w-[100px] h-[40px] flex flex-col justify-center items-center border border-[lightgray] rounded-[8px] mr-[20px] font-[Golestan] cursor-pointer text-[15px] text-[#2b2b2b] opacity-80 duration-300 hover:bg-[#ff0000] hover:text-white"
-        >
-          ادامه مطلب
-        </div>
+        <div class="btn-food">ادامه مطلب</div>
       </div>
     </div>
     <!-- end foods -->
     <!--start social-->
-    <div class="w-full h-[600px] bg-[#e9d69f]">
-      <div
-        class="w-full h-[580px] bg-[#105153] flex flex-col flex-wrap justify-center items-center relative"
-      >
-        <h5 class="font-[Golestan] text-white text-[18px] font-normal">
-          مسئوليت‌های اجتماعی شركت گلستان
-        </h5>
-        <hr style="width: 100%; margin-top: 15px; color: rebeccapurple" />
-        <h2
-          class="font-[Golestan] text-[#00d8df] text-[20px] font-normal mt-[15px]"
-        >
-          <span class="font-[Golestan] text-[#009da2] text-[32px] font-normal"
-            >Golestan</span
-          >
+    <div class="social">
+      <div class="social-item">
+        <h5 class="first-header-of-social">مسئوليت‌های اجتماعی شركت گلستان</h5>
+        <div class="line"></div>
+        <h2 class="second-header-of-social">
+          <span class="span-of-social">Golestan</span>
           Social Responsibility
         </h2>
-        <h4 class="font-[Golestan] text-[17px] text-[#bbbbbb] font-normal">
-          Mahdi Hospital
-        </h4>
-        <div class="w-[390px] h-[340px] absolute bottom-[-23%]">
+        <h4 class="third-header-of-social">Mahdi Hospital</h4>
+        <div class="container-of-image">
           <img
-            class="w-[390px] h-[340px] object-cover shadow-xl"
+            class="image-of-social"
             src="./public/image/social/img-1.png"
             alt=""
           />
@@ -435,16 +379,10 @@
     </div>
     <!-- end social -->
     <!-- start Golestan -->
-    <div
-      class="w-full h-[450px] flex flex-row flex-nowrap justify-center items-center"
-    >
-      <div class="w-[50%] h-[300px] pt-[80px]">
-        <h3 class="font-[Golestan] text-[21px] font-bold text-[red] mb-[10px]">
-          مسئوليت‌های اجتماعی گلستان
-        </h3>
-        <p
-          class="font-[Golestan] text-[#2b2b2b] opacity-80 text-justify leading-8"
-        >
+    <div class="golestan">
+      <div class="golestan-item">
+        <h3 class="header-of-golestan">مسئوليت‌های اجتماعی گلستان</h3>
+        <p class="paragraph-of-golestan">
           كسب‌وكارها اجزای قدرتمند جامعه به شمار می‌آیند و موفق‌ترین،
           قابل‌احترام‌ترین و مطلوب‌ترین كسب‌وكارها آنهایی هستند كه كاری فراتر از
           درآمدزایی ایجاد كنند؛‌ آنهایی كه آمده‌اند تا از تجربه و امکاناتشان
@@ -453,46 +391,41 @@
           اجتماعی خود،‌ گسترده وسیعی از فعالیت‌های عام‌المنفعه را در دستوركار
           خود قرار داده است.
         </p>
-        <button
-          class="w-[120px] h-[40px] font-[Golestan] text-[16px] opacity-70 duration-300 rounded-[8px] border border-[#b8b8b8] mt-[20px] bg-[white] hover:bg-[red] hover:text-white"
-        >
-          اطلاعات بیشتر
-        </button>
+        <button class="btn-of-golestan">اطلاعات بیشتر</button>
       </div>
     </div>
     <!-- end Golestan -->
     <!-- start socialmedia -->
-    <div class="w-full h-[130px] bg-[#ED1C24] flex flex-row items-start">
-      <div
-        class="w-full h-[100px] bg-[#EEEFEF] flex flex-row flex-wrap justify-center items-center"
-      >
+    <div class="socialmedia">
+      <div class="socialmedia-items">
         <img
+          class="image-of-socialmedia"
           class="cursor-pointer"
           src="./public/image/svg/icon1-1-1.png"
           alt=""
         />
         <img
-          class="cursor-pointer"
+          class="image-of-socialmedia"
           src="./public/image/svg/icon2-1-1.png"
           alt=""
         />
         <img
-          class="cursor-pointer"
+          class="image-of-socialmedia"
           src="./public/image/svg/icon3-1.png"
           alt=""
         />
         <img
-          class="cursor-pointer"
+          class="image-of-socialmedia"
           src="./public/image/svg/icon4-1.png"
           alt=""
         />
         <img
-          class="cursor-pointer"
+          class="image-of-socialmedia"
           src="./public/image/svg/icon5-1.png"
           alt=""
         />
         <img
-          class="cursor-pointer"
+          class="image-of-socialmedia"
           src="./public/image/svg/icon6-1-2.png"
           alt=""
         />
@@ -500,177 +433,72 @@
     </div>
     <!-- end socialmedia -->
     <!-- start footer -->
-    <div
-      class="w-full h-[500px] bg-[#2b2b2b] flex flex-col flex-nowrap justify-start items-center"
-    >
-      <div
-        class="w-[80%] h-[85%] flex flex-row flex-wrap justify-center items-center gap-x-5"
-      >
-        <div
-          class="w-[170px] h-[360px] mt-[10px] flex flex-col flex-wrap justify-start items-center"
-        >
+    <div class="footer">
+      <div class="footer-item">
+        <div class="footer-box">
           <img
-            class="w-[130px] h-[100px] bg-cover"
             src="./public/image/footer/img-4.png"
             alt=""
+            class="image-of-footer"
           />
-          <span
-            class="h-[50px] border-y border-slate-300 w-full mt-[22px] flex flex-row flex-wrap justify-center items-center font-[Golestan] text-[whitesmoke]"
-          >
-            چای گلستان
-          </span>
-          <div
-            class="w-full h-[150px] flex flex-col flex-nowrap justify-start gap-y-2 mt-[30px]"
-          >
-            <span
-              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
-            >
-              چای ممتاز هندوستان
-            </span>
-            <span
-              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
-            >
-              چای ممتاز ارل گرل
-            </span>
-            <span
-              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
-            >
-              چای سلان عطری
-            </span>
-            <span
-              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
-            >
-              چای ممتاز سیلان
-            </span>
-            <span
-              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
-            >
-              چای صبحانه گلستان
-            </span>
+          <span class="text-of-footer">چای گلستان</span>
+          <div class="classification">
+            <span class="classification-items"> چای ممتاز هندوستان</span>
+            <span class="classification-items"> چای ممتاز ارل گرل </span>
+            <span class="classification-items"> چای سلان عطری </span>
+            <span class="classification-items"> چای ممتاز سیلان </span>
+            <span class="classification-items"> چای صبحانه گلستان </span>
           </div>
         </div>
-        <div
-          class="w-[170px] h-[360px] mt-[10px] flex flex-col flex-wrap justify-start items-center"
-        >
+        <div class="footer-box">
           <img
-            class="w-[130px] h-[100px] bg-cover"
             src="./public/image/footer/img-3.png"
             alt=""
+            class="image-of-footer"
           />
-          <span
-            class="h-[50px] border-y border-slate-300 w-full mt-[22px] flex flex-row flex-wrap justify-center items-center font-[Golestan] text-[whitesmoke]"
-          >
-            تی بگ گلستان
-          </span>
-          <div
-            class="w-full h-[150px] flex flex-col flex-nowrap justify-start gap-y-2 mt-[30px]"
-          >
-            <span
-              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
-              >تی بگ بلک لاین</span
-            >
-            <span
-              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
-              >تی بگ ارل گرل</span
-            >
-            <span
-              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
-              >دمنوش نعنا</span
-            >
-            <span
-              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
-              >دمنوش بابونه</span
-            >
-            <span
-              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
-              >دمنوش چای سبز</span
-            >
+          <span class="text-of-footer"> تی بگ گلستان </span>
+          <div class="classification">
+            <span class="classification-items">تی بگ بلک لاین</span>
+            <span class="classification-items">تی بگ ارل گرل</span>
+            <span class="classification-items">دمنوش نعنا</span>
+            <span class="classification-items">دمنوش بابونه</span>
+            <span class="classification-items">دمنوش چاس سبز</span>
           </div>
         </div>
-        <div
-          class="w-[170px] h-[360px] mt-[10px] flex flex-col flex-wrap justify-start items-center"
-        >
+        <div class="footer-box">
           <img
-            class="w-[130px] h-[100px] bg-cover"
             src="./public/image/footer/img-2.png"
             alt=""
+            class="image-of-footer"
           />
-          <span
-            class="h-[50px] border-y border-slate-300 w-full mt-[22px] flex flex-row flex-wrap justify-center items-center font-[Golestan] text-[whitesmoke]"
-          >
-            ادویه گلستان
-          </span>
-          <div
-            class="w-full h-[150px] flex flex-col flex-nowrap justify-start gap-y-2 mt-[30px]"
-          >
-            <span
-              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
-              >زعفران ممتاز خراسان</span
-            >
-            <span
-              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
-              >ادویه کاری</span
-            >
-            <span
-              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
-              >ادویه ماست و خیار</span
-            >
-            <span
-              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
-              >فلفل سیاه خالص</span
-            >
-            <span
-              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
-              >زردچوبه ممتاز</span
-            >
+          <span class="text-of-footer">ادویه گلستان</span>
+          <div class="classification">
+            <span class="classification-items">زعفران ممتاز خراسان</span>
+            <span class="classification-items">ادویه کاری</span>
+            <span class="classification-items">ادویه ماست و خیار</span>
+            <span class="classification-items"> فلفل سیاه خالص</span>
+            <span class="classification-items">زردچوبه ممتاز</span>
           </div>
         </div>
-        <div
-          class="w-[170px] h-[360px] mt-[10px] flex flex-col flex-wrap justify-start items-center"
-        >
+        <div class="footer-box">
           <img
-            class="w-[130px] h-[100px] bg-cover"
             src="./public/image/footer/img-1.png"
             alt=""
+            class="image-of-footer"
           />
-          <span
-            class="h-[50px] border-y border-slate-300 w-full mt-[22px] flex flex-row flex-wrap justify-center items-center font-[Golestan] text-[whitesmoke]"
-          >
-            حبوبات گلستان
-          </span>
-          <div
-            class="w-full h-[150px] flex flex-col flex-nowrap justify-start gap-y-2 mt-[30px]"
-          >
-            <span
-              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
-              >لوبیا قرمز ممتاز</span
-            >
-            <span
-              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
-              >لوبیا چیتی گلستان</span
-            >
-            <span
-              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
-              >عدس کانادایی</span
-            >
-            <span
-              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
-              >نخود زودپز کرمانشاه</span
-            >
-            <span
-              class="w-full font-[Golestan] text-[13px] text-[#a4a4a4] hover:text-white duration-300"
-              >لوبیا سفید گلستان</span
-            >
+          <span class="text-of-footer">حبوبات گلستان</span>
+          <div class="classification">
+            <span class="classification-items"> لوبیا قرمز ممتاز</span>
+            <span class="classification-items"> لوبیا چیتی گلستان</span>
+            <span class="classification-items"> عدس کانادایی</span>
+            <span class="classification-items"> نخود زودپز کرمانشاه</span>
+            <span class="classification-items"> لوبیا سفید گلستان</span>
           </div>
         </div>
-      </div>
-      <div
-        class="w-[80%] h-[30%] font-[Golestan] text-[14px] flex flex-col flex-wrap justify-center items-center text-[#cfcdcd] font-normal"
-      >
-        All Right Reserved Golestan Company 2022-2025
-        <span class="font-normal text-[13px] text-[#868484]"
-          >Design By: Golestan Studio</span
-        >
+        <div class="end-of-footer">
+          All Right Reserved Golestan Company 2022-2025
+          <span class="span-of-footer">Design By: Golestan Studio</span>
+        </div>
       </div>
     </div>
     <!-- end footer -->
