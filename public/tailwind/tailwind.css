@@ -188,33 +188,33 @@ html {
     @apply desktop:w-[330px] mobile:w-[330px] desktop:h-[320px] mobile:h-[330px] desktop:object-cover mobile:object-cover;
   }
   .hr-lottery {
-    @apply desktop:w-full mobile:w-full desktop:h-[2px] mobile:h-2px desktop:opacity-70 mobile:opacity-70 desktop:bg-[lightgray] mobile:bg-[lightgray] desktop:mt-[15px] mobile:mt-[15px];
+    @apply desktop:w-full mobile:w-full desktop:h-[2px] mobile:h-[2px] desktop:opacity-70 mobile:opacity-70 desktop:bg-[lightgray] mobile:bg-[lightgray] desktop:mt-[15px] mobile:mt-[15px];
   }
 }
 @layer components {
   .introduce {
-    @apply desktop:w-full desktop:flex desktop:flex-col desktop:flex-wrap desktop:items-center desktop:justify-center desktop:mb-[70px];
+    @apply desktop:w-full mobile:w-full desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-wrap mobile:flex-wrap desktop:items-center mobile:items-center desktop:justify-center mobile:justify-center desktop:mb-[70px] mobile:mb-[70px];
   }
   .introduce-item {
-    @apply desktop:w-1/2 desktop:mt-[50px];
+    @apply desktop:w-1/2 mobile:w-1/2 desktop:mt-[50px] mobile:mt-[50px];
   }
   .heading-of-introduce {
-    @apply desktop:font-[Golestan] desktop:text-[red] desktop:text-xl desktop:font-bold desktop:mb-[15px];
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[red] mobile:text-[red] desktop:text-xl mobile:text-[xl] desktop:font-bold mobile:font-bold desktop:mb-[15px] mobile:mb-[15px];
   }
   .paragraph-of-introduce {
     @apply font-[Golestan] text-base opacity-60 leading-8 text-justify;
   }
   .other-items-of-introduce {
-    @apply w-full mt-[120px] flex flex-row flex-nowrap justify-between gap-x-[15px];
+    @apply desktop:w-full desktop:mt-[120px] desktop:flex desktop:flex-row desktop:flex-nowrap desktop:justify-between desktop:gap-x-[15px];
   }
   .item-item-introduce {
-    @apply w-[180px] h-[260px] flex flex-col flex-wrap justify-center items-center gap-x-[15px] border-b border-solid border-gray-400;
+    @apply desktop:w-[180px] desktop:h-[260px] desktop:flex desktop:flex-col desktop:flex-wrap desktop:justify-center desktop:items-center desktop:gap-x-[15px] desktop:border-b desktop:border-solid desktop:border-gray-400;
   }
   .image-of-introduce {
-    @apply w-[180px] h-[180px] object-cover;
+    @apply desktop:w-[180px] desktop:h-[180px] desktop:object-cover;
   }
   .caption-of-introduce {
-    @apply font-[Golestan] text-base text-[#2b2b2b] opacity-60 font-normal mt-[20px];
+    @apply desktop:font-[Golestan] desktop:text-base desktop:text-[#2b2b2b] desktop:opacity-60 desktop:font-normal mt-[20px];
   }
   .hr-introduce {
     @apply w-full h-[2px] opacity-70 bg-[lightgray] mt-[35px];
