@@ -30,7 +30,7 @@ html {
 }
 @layer components {
   .menu {
-    @apply desktop:w-full mobile:w-full desktop:h-[100px] mobile:h-[170px] desktop:bg-[#2b2b2b] mobile:bg-[#2b2b2b] desktop:sticky mobile:sticky desktop:top-0 desktop:z-[9999] mobile:z-[9999];
+    @apply desktop:w-full mobile:w-full desktop:h-[100px] mobile:h-[170px] desktop:bg-[#2b2b2b] mobile:bg-[#2b2b2b] desktop:sticky mobile:sticky desktop:top-0 desktop:z-[99999] mobile:z-[9999];
   }
   .image-menu {
     @apply desktop:absolute desktop:w-[170px] mobile:w-[170px] desktop:h-[105px] mobile:h-[105px] desktop:right-[210px] mobile:right-[320px] desktop:top-[50px] mobile:top-[10px] mobile:absolute;
@@ -84,10 +84,10 @@ html {
     @apply desktop:block desktop:w-fit desktop:py-0 desktop:px-5 desktop:no-underline desktop:text-[#a5a4a4] desktop:font-[Golestan] desktop:text-base desktop:cursor-pointer desktop:leading-[20px] desktop:hover:text-white desktop:duration-300;
   }
   .label {
-    @apply desktop:hidden mobile:inline-block mobile:absolute mobile:w-[35px] mobile:h-[35px] mobile:bg-[blue] mobile:mt-[130px] mobile:mr-[20px] cursor-pointer ;
+    @apply desktop:hidden mobile:inline-block mobile:absolute mobile:w-[35px] mobile:h-[35px] mobile:bg-[green] mobile:mt-[130px] mobile:mr-[20px] cursor-pointer;
   }
-  .label:checked > .hamburger {
-    @apply mobile:top-[0];
+  #item:checked ~ .hamburger {
+    @apply top-1/7 duration-1000 transition-all;
   }
   .logo-line-first {
     @apply mobile:w-[80%] h-[2px] bg-[white] my-0 mx-auto absolute left-[10%] top-[25%];

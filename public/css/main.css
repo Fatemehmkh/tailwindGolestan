@@ -878,7 +878,7 @@ h1,
     height: 35px;
     width: 35px;
     --tw-bg-opacity: 1;
-    background-color: rgb(0 0 255 / var(--tw-bg-opacity));
+    background-color: rgb(0 128 0 / var(--tw-bg-opacity));
   }
 }
 
@@ -888,10 +888,8 @@ h1,
   }
 }
 
-@media (min-width: 0) {
-  .label:checked > .hamburger {
-    top: 0;
-  }
+#item:checked ~ .hamburger {
+  top: 33.333333%;
 }
 
 .logo-line-first {
