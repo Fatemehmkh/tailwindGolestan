@@ -30,61 +30,93 @@ html {
 }
 @layer components {
   .menu {
-    @apply desktop:w-full mobile:w-full mobile:h-[170px] desktop:h-[100px] mobile:bg-[#2b2b2b] desktop:bg-[#2b2b2b] mobile:sticky desktop:sticky mobile:top-0 desktop:top-0 mobile:z-[9999] desktop:z-[9999];
+    @apply desktop:w-full mobile:w-full desktop:h-[100px] mobile:h-[170px] desktop:bg-[#2b2b2b] mobile:bg-[#2b2b2b] desktop:sticky mobile:sticky desktop:top-0 desktop:z-[9999] mobile:z-[9999];
   }
   .image-menu {
-    @apply desktop:absolute mobile:absolute desktop:w-[170px] mobile:w-[160px] mobile:h-[100px] desktop:h-[105px] desktop:right-[210px] mobile:right-[39%] mobile:top-[10px] desktop:top-[50px];
+    @apply desktop:absolute desktop:w-[170px] mobile:w-[170px] desktop:h-[105px] mobile:h-[105px] desktop:right-[210px] mobile:right-[320px] desktop:top-[50px] mobile:top-[10px] mobile:absolute;
   }
   .menu-nav {
-    @apply desktop:w-full mobile:w-full desktop:h-[100px] mobile:h-[170px] desktop:flex mobile:flex desktop:flex-nowrap mobile:flex-nowrap desktop:flex-row mobile:flex-row desktop:justify-center mobile:justify-center desktop:items-center mobile:items-center desktop:pt-[50px] mobile:pt-[129px] mobile:pl-[60px] desktop:pr-[90px] desktop:relative mobile:relative;
+    @apply desktop:w-full desktop:h-[100px] desktop:flex desktop:flex-nowrap desktop:flex-row desktop:justify-center desktop:items-center desktop:pt-[50px] desktop:pr-[90px] desktop:relative mobile:hidden;
   }
   .nav-item {
-    @apply desktop:w-fit mobile:w-fit desktop:h-[30px] mobile:h-[50px] desktop:flex mobile:flex desktop:flex-wrap mobile:flex-nowrap desktop:flex-row mobile:flex-row desktop:justify-center mobile:justify-center desktop:items-center mobile:items-center desktop:border-l desktop:border-solid desktop:border-l-[#665F5F] desktop:mb-[30px];
+    @apply desktop:w-fit desktop:h-[30px] desktop:flex desktop:flex-wrap desktop:flex-row desktop:justify-center desktop:items-center desktop:border-l desktop:border-solid desktop:border-l-[#665F5F] desktop:mb-[30px];
   }
   .nav-item:hover > .sub-menu-company {
-    @apply desktop:block mobile:block desktop:duration-500 mobile:duration-300 desktop:transition-all mobile:transition-all desktop:delay-300 mobile:delay-300;
+    @apply desktop:block desktop:duration-500 desktop:transition-all desktop:delay-300;
   }
   .nav-item:hover > .sub-menu-category {
-    @apply desktop:block mobile:block desktop:duration-500 mobile:duration-300 desktop:transition-all mobile:transition-all desktop:delay-300 mobile:delay-300;
+    @apply desktop:block desktop:duration-500 desktop:transition-all desktop:delay-300;
   }
   .nav-item:hover > .sub-menu-weblog {
-    @apply desktop:block mobile:block desktop:duration-500 mobile:duration-300 desktop:transition-all mobile:transition-all desktop:delay-300 mobile:delay-300;
+    @apply desktop:block desktop:duration-500 desktop:transition-all desktop:delay-300;
   }
   .nav-item:hover > .sub-menu-call {
-    @apply desktop:block mobile:block desktop:duration-500 mobile:duration-300 desktop:transition-all mobile:transition-all desktop:delay-300 mobile:delay-300;
+    @apply desktop:block desktop:duration-500 desktop:transition-all desktop:delay-300;
   }
   .nav-link {
-    @apply desktop:block mobile:block desktop:w-fit mobile:w-fit desktop:py-0 mobile:py-0 desktop:px-5 mobile:px-[15px] desktop:no-underline desktop:text-[#c4bcbc] mobile:text-[#c4bcbc] desktop:font-[Golestan] mobile:font-[Golestan]  desktop:text-base mobile:text-[17px] desktop:cursor-pointer mobile:cursor-pointer desktop:leading-[20px] mobile:leading-[20px] desktop:hover:text-[white] mobile:hover:text-white desktop:duration-300 mobile:duration-300;
-  }
-  .nav-link-main {
-    @apply mobile:block mobile:w-fit mobile:py-0 mobile:px-[15px] mobile:text-[white] mobile:font-[Golestan] mobile:text-[17px]  mobile:cursor-pointer mobile:leading-[20px] mb-[2px];
+    @apply desktop:block desktop:w-fit desktop:py-0 desktop:px-5 desktop:no-underline desktop:text-[#c4bcbc] desktop:font-[Golestan]  desktop:text-base desktop:cursor-pointer desktop:leading-[20px] desktop:hover:text-[white] desktop:duration-300;
   }
   .sub-menu-company {
-    @apply desktop:w-[180px] mobile:w-[180px] desktop:h-[41vh] mobile:h-[41vh] desktop:bg-[#2b2b2b] mobile:bg-[#2b2b2b] desktop:absolute mobile:absolute desktop:top-[83px] mobile:top-[100px] desktop:right-[35%] mobile:right-[35%] desktop:pr-[15px] mobile:pr-[15px] desktop:pt-[10px] desktop:hidden mobile:hidden;
+    @apply desktop:w-[180px] desktop:h-[41vh] desktop:bg-[#2b2b2b] desktop:absolute desktop:top-[83px] desktop:right-[35%] desktop:pr-[15px] desktop:pt-[10px] desktop:hidden;
   }
   .sub-menu-category {
-    @apply desktop:w-[182px] mobile:w-[182px] desktop:h-[70vh] mobile:h-[70vh] desktop:bg-[#2b2b2b] mobile:bg-[#2b2b2b]  desktop:absolute mobile:absolute desktop:top-[83px] mobile:top-[100px] desktop:left-[45%] mobile:left-[45%] desktop:pr-[15px] mobile:pr-[15px] desktop:pt-[10px] mobile:pt-[10px] desktop:hidden mobile:hidden;
+    @apply desktop:w-[182px] desktop:h-[70vh] desktop:bg-[#2b2b2b] desktop:absolute desktop:top-[83px] desktop:left-[45%]  desktop:pr-[15px] desktop:pt-[10px] desktop:hidden;
   }
   .sub-menu-weblog {
-    @apply desktop:w-[180px] mobile:w-[180px] desktop:h-[35vh] mobile:h-[35vh] desktop:bg-[#2b2b2b] mobile:bg-[#2b2b2b] desktop:absolute mobile:absolute desktop:top-[83px] mobile:top-[100px] desktop:left-[38%] mobile:left-[38%]  desktop:pr-[15px] mobile:pr-[15px] desktop:pt-[10px] mobile:pt-[10px] desktop:hidden mobile:hidden;
+    @apply desktop:w-[180px] desktop:h-[35vh] desktop:bg-[#2b2b2b] desktop:absolute desktop:top-[83px] desktop:left-[38%]  desktop:pr-[15px] pt-[10px] hidden;
   }
   .sub-menu-call {
-    @apply desktop:w-[180px] mobile:w-[180px] desktop:h-[20vh] mobile:h-[20vh] desktop:bg-[#2b2b2b] mobile:bg-[#2b2b2b] desktop:absolute mobile:absolute desktop:top-[83px] mobile:top-[100px] desktop:left-[20%] mobile:left-[20%]  desktop:pr-[15px] mobile:pr-[15px] desktop:pt-[10px] mobile:pt-[10px] desktop:hidden mobile:hidden;
+    @apply desktop:w-[180px] desktop:h-[20vh] desktop:bg-[#2b2b2b] desktop:absolute desktop:top-[83px] desktop:left-[20%]  desktop:pr-[15px] desktop:pt-[10px] desktop:hidden;
   }
   .sub-menu-item {
     @apply desktop:w-fit desktop:h-[30px];
   }
   .sub-menu-link {
-    @apply desktop:font-[Golestan] mobile:font-[.golestan] desktop:text-[#b5b5b5] mobile:text-[#b5b5b5] desktop:opacity-90 mobile:opacity-90 desktop:hover:text-[white] mobile:hover:text-[white] desktop:duration-300 mobile:duration-300 desktop:block mobile:block desktop:leading-10 mobile:leading-10;
+    @apply desktop:font-[Golestan] desktop:text-[#b5b5b5] desktop:opacity-90 desktop:hover:text-[white] desktop:duration-300 desktop:block desktop:leading-10;
   }
   .nav-link-main {
     @apply desktop:block desktop:w-fit desktop:py-0 desktop:px-5 desktop:no-underline desktop:text-[white] desktop:font-[Golestan]  desktop:text-base desktop:cursor-pointer desktop:leading-[20px];
   }
   .nav-EN {
-    @apply desktop:w-fit mobile:w-fit desktop:h-[30px] mobile:h-[50px] desktop:flex mobile:flex desktop:flex-wrap mobile:flex-wrap desktop:flex-row mobile:flex-row desktop:justify-center mobile:justify-center desktop:items-center mobile:items-center desktop:mb-[30px] mobile:mb-[2px] mobile:px-[15px];
+    @apply desktop:w-fit desktop:h-[30px] desktop:flex desktop:flex-wrap desktop:flex-row desktop:justify-center desktop:items-center desktop:mb-[30px];
   }
   .EN {
-    @apply desktop:block mobile:block desktop:w-fit mobile:w-fit desktop:py-0 mobile:py-0 desktop:px-5 desktop:no-underline desktop:text-[#a5a4a4] mobile:text-[#c4bcbc] desktop:font-[Golestan] desktop:text-base mobile:text-[17px] desktop:cursor-pointer desktop:leading-[20px] desktop:hover:text-white desktop:duration-300;
+    @apply desktop:block desktop:w-fit desktop:py-0 desktop:px-5 desktop:no-underline desktop:text-[#a5a4a4] desktop:font-[Golestan] desktop:text-base desktop:cursor-pointer desktop:leading-[20px] desktop:hover:text-white desktop:duration-300;
+  }
+  .label {
+    @apply desktop:hidden mobile:inline-block mobile:absolute mobile:w-[35px] mobile:h-[35px] mobile:bg-[blue] mobile:mt-[130px] mobile:mr-[20px] cursor-pointer ;
+  }
+  .label:checked > .hamburger {
+    @apply mobile:top-[0];
+  }
+  .logo-line-first {
+    @apply mobile:w-[80%] h-[2px] bg-[white] my-0 mx-auto absolute left-[10%] top-[25%];
+  }
+  .logo-line-second {
+    @apply mobile:w-[80%] h-[2px] bg-[white] my-0 mx-auto absolute left-[10%] top-[50%];
+  }
+  .logo-line-third {
+    @apply mobile:w-[80%] h-[2px] bg-[white] my-0 mx-auto absolute left-[10%] top-[75%];
+  }
+  .input {
+    @apply desktop:hidden mobile:hidden mobile:mt-[130px] mobile:mr-[20px];
+  }
+  .hamburger {
+    @apply desktop:hidden mobile:w-full mobile:h-[500px] mobile:bg-[pink] mobile:absolute mobile:top-[100%];
+  }
+  .nav-hamburger {
+    @apply mobile:w-full;
+  }
+  .hamburger-item {
+    @apply mobile:w-full mobile:h-[40px] mobile:mr-[25px];
+  }
+  .link-hamburger {
+    @apply mobile:block mobile:w-full mobile:h-[40px] mobile:leading-[40px] mobile:text-[16px] mobile:font-[Golestan] mobile:text-[#c4bcbc] hover:text-[whitesmoke] duration-300;
+  }
+}
+@layer components {
+  .menu-small {
+    @apply mobile:fixed mobile:translateY-[-100%] mobile:transform-[0.2s] mobile:top-0 mobile:left-0 mobile:right-0 mobile:bottom-0 mobile:z-[99999] mobile:bg-[#2b2b2b] mobile:text-[white] list-none pt-[4rem];
   }
 }
 @layer components {
@@ -164,31 +196,31 @@ html {
 }
 @layer components {
   .lottery {
-    @apply desktop:w-full mobile:w-full desktop:h-[420px] mobile:h-[420px] desktop:bg-gradient-to-r from-[#FBFBFB] mobile:bg-gradient-to-r from-[#D2D2D2] to-[#FBFBFB] desktop:flex mobile:flex desktop:flex-row mobile:flex-row desktop:justify-center mobile:justify-center mobile:gap-x-[100px] desktop:items-center mobile:items-center;
+    @apply w-full h-[420px] bg-gradient-to-r from-[#FBFBFB] to-[#D2D2D2] flex flex-row justify-center items-center;
   }
   .lottery-right {
-    @apply desktop:w-[40%] mobile:w-[55%] desktop:h-[full] mobile:h-full desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-wrap mobile:flex-wrap desktop:justify-center mobile:justify-center desktop:pr-[100px] mobile:pr-[50px] mobile:pb-[50px] mobile:pt-[20px];
+    @apply w-[40%] h-[full] flex flex-col flex-wrap justify-center pr-[100px];
   }
   .heading-of-lottery {
-    @apply desktop:w-fit mobile:w-fit desktop:text-[red] mobile:text-[red] desktop:text-3xl mobile:text-3xl desktop:mb-[10px] mobile:mb-[10px];
+    @apply w-fit text-[red] text-3xl mb-[10px];
   }
   .second-heading-of-lottery {
-    @apply desktop:w-fit mobile:w-fit desktop:text-[#2b2b2b] mobile:text-[#2b2b2b]  desktop:text-lg mobile:text-[20px] desktop:opacity-[0.8] desktop:mb-[15px] mobile:mb-[15px];
+    @apply w-fit text-[#2b2b2b]  text-lg opacity-[0.8] mb-[15px];
   }
   .paragraph-of-lottery {
-    @apply desktop:w-[88%] mobile:w-[88%] desktop:text-[#2b2b2b] mobile:text-[#2b2b2b]  desktop:text-[15px] mobile:text-[16px] desktop:opacity-60 mobile:opacity-60 desktop:mb-[10px] mobile:mb-[10px] desktop:leading-9 mobile:leading-7;
+    @apply w-[88%] text-[#2b2b2b]  text-[15px] opacity-60 mb-[10px] leading-9;
   }
   .btm-of-lottery {
-    @apply desktop:block mobile:block desktop:w-[120px] mobile:w-[120px] desktop:h-[40px] mobile:h-[40px] desktop:border mobile:border desktop:border-gray-300 mobile:border-gray-300 desktop:rounded-lg mobile:rounded-lg desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-sm mobile:text-sm desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:opacity-90 mobile:opacity-90 desktop:leading-10 mobile:leading-10 desktop:text-center mobile:text-center desktop:cursor-pointer mobile:cursor-pointer desktop:mt-[15px] mobile:mt-[15px] desktop:transition-[300ms] mobile:transition-[300ms] desktop:bg-white mobile:bg-white desktop:hover:bg-[red] mobile:hover:bg-[red] desktop:hover:text-white mobile:hover:text-white;
+    @apply block w-[120px] h-[40px] border border-gray-300 rounded-lg font-[Golestan] text-sm text-[#2b2b2b] opacity-90 leading-10 text-center cursor-pointer mt-[15px] transition-[300ms] bg-white hover:bg-[red] hover:text-white;
   }
   .lottery-left {
-    @apply desktop:w-[40%] mobile:w-[40%] desktop:h-[320px] mobile:h-[320px] desktop:flex mobile:flex desktop:flex-row mobile:flex-row desktop:justify-center mobile:justify-center;
+    @apply w-[40%] h-[320px] flex flex-row justify-center;
   }
   .image-of-lottery {
-    @apply desktop:w-[330px] mobile:w-[330px] desktop:h-[320px] mobile:h-[330px] desktop:object-cover mobile:object-cover;
+    @apply w-[330px] h-[320px] object-cover;
   }
   .hr-lottery {
-    @apply desktop:w-full mobile:w-full desktop:h-[2px] mobile:h-[2px] desktop:opacity-70 mobile:opacity-70 desktop:bg-[lightgray] mobile:bg-[lightgray] desktop:mt-[15px] mobile:mt-[15px];
+    @apply w-full h-[2px] opacity-70 bg-[lightgray] mt-[15px];
   }
 }
 @layer components {
