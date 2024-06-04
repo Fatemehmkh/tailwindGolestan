@@ -434,8 +434,9 @@ html {
     @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[15px] mobile:text-[15px] desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:opacity-70 mobile:opacity-70 desktop:text-justify mobile:text-justify desktop:mx-[20px] mobile:mx-[20px] mobile:leading-8 desktop:leading-8;
   }
   .btn-food {
-    @apply desktop:w-[100px] mobile:w-[100px] desktop:h-[40px] mobile:h-[40px] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:justify-center mobile:justify-center desktop:items-center mobile:items-center desktop:border mobile:border desktop:border-[lightgray] mobile:border-[lightgray] desktop:rounded-[8px] mobile:rounded-[8px] desktop:mr-[20px] mobile:mr-[20px] desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[15px] desktop:text-[#2b2b2b] desktop:opacity-80 desktop:duration-300 desktop:cursor-pointer desktop:hover:bg-[#ff0000] desktop:hover:text-white;
+    @apply desktop:w-[100px] mobile:w-[100px] desktop:h-[40px] mobile:h-[40px] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:justify-center mobile:justify-center desktop:items-center mobile:items-center desktop:border mobile:border desktop:border-[lightgray] mobile:border-[lightgray] desktop:rounded-[8px] mobile:rounded-[8px] desktop:mr-[20px] mobile:mr-[20px] desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[15px] mobile:text-[15px] desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:opacity-80 mobile:opacity-80 desktop:duration-300 mobile:duration-300 desktop:cursor-pointer mobile:cursor-pointer desktop:hover:bg-[#ff0000] mobile:hover:bg-[#ff0000] desktop:hover:text-white mobile:hover:text-[white];
   }
+
 }
 @layer components {
   .social {
@@ -468,29 +469,29 @@ html {
 }
 @layer components {
   .golestan {
-    @apply w-full h-[450px] flex flex-row flex-nowrap justify-center items-center;
+    @apply desktop:w-full mobile:w-full desktop:h-[450px] mobile:h-[450px] desktop:flex mobile:flex desktop:flex-row mobile:flex-row desktop:flex-nowrap mobile:flex-nowrap desktop:justify-center mobile:justify-center desktop:items-center mobile:items-center;
   }
   .golestan-item {
-    @apply w-[50%] h-[300px] pt-[80px];
+    @apply desktop:w-[50%] mobile:w-[92%] desktop:h-[300px] mobile:h-[300px] desktop:pt-[80px] mobile:pt-[80px];
   }
   .header-of-golestan {
-    @apply font-[Golestan] text-[21px] font-bold text-[red] mb-[10px];
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[21px] mobile:text-[19px] desktop:font-bold mobile:font-bold desktop:text-[red] mobile:text-[red] desktop:mb-[10px] mobile:mb-[10px];
   }
   .paragraph-of-golestan {
-    @apply font-[Golestan] text-[#2b2b2b] opacity-80 text-justify leading-8;
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:opacity-80 mobile:opacity-80 desktop:text-justify mobile:text-justify desktop:leading-8 mobile:leading-8;
   }
   .btn-of-golestan {
-    @apply w-[120px] h-[40px] font-[Golestan] text-[16px] opacity-70 duration-300 rounded-[8px] border border-[#b8b8b8] mt-[20px] bg-[white] hover:bg-[red] hover:text-white;
+    @apply desktop:w-[120px] mobile:w-[120px] desktop:h-[40px] mobile:h-[40px] desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[16px] mobile:text-[16px] desktop:opacity-70 mobile:opacity-70 desktop:duration-300 mobile:duration-300 desktop:rounded-[8px] mobile:rounded-[8px] desktop:border mobile:border desktop:border-[#b8b8b8] mobile:border-[#b8b8b8] desktop:mt-[20px] mobile:mt-[20px] desktop:bg-[white] mobile:bg-[white] desktop:hover:bg-[red] mobile:hover:bg-[red] desktop:hover:text-white mobile:hover:text-white;
   }
 }
 @layer components {
   .socialmedia {
-    @apply w-full h-[130px] bg-[#ED1C24] flex flex-row items-start;
+    @apply desktop:w-full mobile:w-full desktop:h-[130px] mobile:h-[130px] desktop:bg-[#ED1C24] mobile:bg-[#ED1C24] desktop:flex mobile:flex desktop:flex-row mobile:flex-row desktop:items-start mobile:items-start;
   }
   .socialmedia-items {
-    @apply w-full h-[100px] bg-[#EEEFEF] flex flex-row flex-wrap justify-center items-center;
+    @apply desktop:w-full mobile:w-full desktop:h-[100px] mobile:h-[100px] desktop:bg-[#EEEFEF] mobile:bg-[#EEEFEF] desktop:flex mobile:flex desktop:flex-row mobile:flex-row desktop:flex-wrap mobile:flex-wrap desktop:justify-center mobile:justify-center desktop:items-center mobile:items-center;
   }
   .image-of-socialmedia {
-    @apply cursor-pointer;
+    @apply desktop:cursor-pointer mobile:cursor-pointer;
   }
 }
