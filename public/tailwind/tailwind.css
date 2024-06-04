@@ -17,7 +17,7 @@ html {
 }
 @layer base {
   .wrapper {
-    @apply desktop:w-full mobile:w-full desktop:m-0 desktop:p-0 mobile:m-0 mobile:p-0;
+    @apply desktop:w-full mobile:w-full desktop:m-0 desktop:p-0 mobile:m-0 mobile:p-0 overflow-y-scroll no-scrollbar;
   }
 }
 @layer base {
@@ -27,13 +27,29 @@ html {
   h2 {
     @apply font-[Golestan] font-normal;
   }
+  @layer utilities {
+    /* Hide scrollbar for Chrome */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    /* Hide scrollbar */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+  @media (max-width: 767px) {
+    .no-scrollbar {
+      overflow-y: hidden;
+    }
+  }
 }
 @layer components {
   .menu {
-    @apply desktop:w-full mobile:w-full desktop:h-[100px] mobile:h-[170px] desktop:bg-[#2b2b2b] mobile:bg-[#2b2b2b] desktop:sticky mobile:sticky desktop:top-0 desktop:z-[99999] mobile:z-[9999];
+    @apply desktop:w-full mobile:w-full desktop:h-[100px] mobile:h-[170px] desktop:bg-[#2b2b2b] mobile:bg-[#2b2b2b] desktop:sticky mobile:sticky desktop:top-0 desktop:z-[99999] mobile:z-[99999];
   }
   .image-menu {
-    @apply desktop:absolute desktop:w-[170px] mobile:w-[170px] desktop:h-[105px] mobile:h-[105px] desktop:right-[210px] mobile:right-[320px] desktop:top-[50px] mobile:top-[10px] mobile:absolute;
+    @apply desktop:absolute desktop:w-[170px] mobile:w-[170px] desktop:h-[105px] mobile:h-[105px] desktop:right-[210px] mobile:right-[290px] desktop:top-[50px] mobile:top-[10px] mobile:absolute;
   }
   .menu-nav {
     @apply desktop:w-full desktop:h-[100px] desktop:flex desktop:flex-nowrap desktop:flex-row desktop:justify-center desktop:items-center desktop:pt-[50px] desktop:pr-[90px] desktop:relative mobile:hidden;
@@ -84,25 +100,34 @@ html {
     @apply desktop:block desktop:w-fit desktop:py-0 desktop:px-5 desktop:no-underline desktop:text-[#a5a4a4] desktop:font-[Golestan] desktop:text-base desktop:cursor-pointer desktop:leading-[20px] desktop:hover:text-white desktop:duration-300;
   }
   .label {
-    @apply desktop:hidden mobile:inline-block mobile:absolute mobile:w-[35px] mobile:h-[35px] mobile:bg-[green] mobile:mt-[130px] mobile:mr-[20px] cursor-pointer;
+    @apply desktop:hidden mobile:inline-block mobile:absolute mobile:w-[35px] mobile:h-[35px] mobile:bg-[#2b2b2b] mobile:mt-[130px] mobile:mr-[20px] cursor-pointer;
+  }
+  .label:hover > .logo-line-first {
+    @apply bg-white;
+  }
+  .label:hover > .logo-line-second {
+    @apply bg-white;
+  }
+  .label:hover > .logo-line-third {
+    @apply bg-white;
   }
   #item:checked ~ .hamburger {
-    @apply top-1/7 duration-1000 transition-all;
+    @apply desktop:hidden bottom-0  mobile:block top-[100%];
   }
   .logo-line-first {
-    @apply mobile:w-[80%] h-[2px] bg-[white] my-0 mx-auto absolute left-[10%] top-[25%];
+    @apply mobile:w-[78%] h-[3px] bg-[#b7b2b2] my-0 mx-auto absolute left-[10%] top-[25%] mobile:rounded-sm;
   }
   .logo-line-second {
-    @apply mobile:w-[80%] h-[2px] bg-[white] my-0 mx-auto absolute left-[10%] top-[50%];
+    @apply mobile:w-[78%] h-[3px] bg-[#b7b2b2] my-0 mx-auto absolute left-[10%] top-[50%]  mobile:rounded-sm;
   }
   .logo-line-third {
-    @apply mobile:w-[80%] h-[2px] bg-[white] my-0 mx-auto absolute left-[10%] top-[75%];
+    @apply mobile:w-[78%] h-[3px] bg-[#b7b2b2] my-0 mx-auto absolute left-[10%] top-[75%]  mobile:rounded-sm;
   }
   .input {
     @apply desktop:hidden mobile:hidden mobile:mt-[130px] mobile:mr-[20px];
   }
   .hamburger {
-    @apply desktop:hidden mobile:w-full mobile:h-[500px] mobile:bg-[pink] mobile:absolute mobile:top-[100%];
+    @apply desktop:hidden mobile:w-full mobile:h-[350px] mobile:bg-[#2b2b2b] mobile:hidden mobile:top-[100px] mobile:absolute mobile:transition-all mobile:duration-300 mobile:ease-out;
   }
   .nav-hamburger {
     @apply mobile:w-full;
@@ -112,11 +137,6 @@ html {
   }
   .link-hamburger {
     @apply mobile:block mobile:w-full mobile:h-[40px] mobile:leading-[40px] mobile:text-[16px] mobile:font-[Golestan] mobile:text-[#c4bcbc] hover:text-[whitesmoke] duration-300;
-  }
-}
-@layer components {
-  .menu-small {
-    @apply mobile:fixed mobile:translateY-[-100%] mobile:transform-[0.2s] mobile:top-0 mobile:left-0 mobile:right-0 mobile:bottom-0 mobile:z-[99999] mobile:bg-[#2b2b2b] mobile:text-[white] list-none pt-[4rem];
   }
 }
 @layer components {
@@ -196,31 +216,31 @@ html {
 }
 @layer components {
   .lottery {
-    @apply w-full h-[420px] bg-gradient-to-r from-[#FBFBFB] to-[#D2D2D2] flex flex-row justify-center items-center;
+    @apply desktop:w-full mobile:w-full desktop:h-[420px] mobile:h-[650px] desktop:bg-gradient-to-r from-[#FBFBFB] mobile:bg-gradient-to-r from-[#FBFBFB] to-[#D2D2D2] desktop:flex mobile:flex desktop:flex-row mobile:flex-col desktop:justify-center mobile:justify-center desktop:items-center;
   }
   .lottery-right {
-    @apply w-[40%] h-[full] flex flex-col flex-wrap justify-center pr-[100px];
+    @apply desktop:w-[40%] mobile:w-[98%] desktop:h-full mobile:h-full desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-wrap mobile:flex-wrap desktop:justify-center mobile:justify-center desktop:pr-[100px] mobile:pr-[40px] mt-[18px];
   }
   .heading-of-lottery {
-    @apply w-fit text-[red] text-3xl mb-[10px];
+    @apply desktop:w-fit mobile:w-fit desktop:text-[red] mobile:text-[red] desktop:text-3xl mobile:text-3xl desktop:mb-[10px] mobile:my-[15px];
   }
   .second-heading-of-lottery {
-    @apply w-fit text-[#2b2b2b]  text-lg opacity-[0.8] mb-[15px];
+    @apply desktop:w-fit mobile:w-fit desktop:text-[#2b2b2b] mobile:text-[#2b2b2b]  desktop:text-lg mobile:text-lg desktop:opacity-[0.8] mobile:opacity-[0.8] desktop:mb-[15px] mobile:mb-[15px];
   }
   .paragraph-of-lottery {
-    @apply w-[88%] text-[#2b2b2b]  text-[15px] opacity-60 mb-[10px] leading-9;
+    @apply desktop:w-[88%] mobile:w-full desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:text-[15px] mobile:text-[15px]  desktop:opacity-60 mobile:opacity-60 desktop:mb-[10px] mobile:mb-[10px] desktop:leading-9 mobile:leading-9;
   }
   .btm-of-lottery {
-    @apply block w-[120px] h-[40px] border border-gray-300 rounded-lg font-[Golestan] text-sm text-[#2b2b2b] opacity-90 leading-10 text-center cursor-pointer mt-[15px] transition-[300ms] bg-white hover:bg-[red] hover:text-white;
+    @apply desktop:block mobile:block desktop:w-[120px] mobile:w-[120px] desktop:h-[40px] mobile:h-[40px] desktop:border mobile:border desktop:border-gray-300 mobile:border-gray-300 desktop:rounded-lg mobile:rounded-lg desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-sm mobile:text-[15px] desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:opacity-90 mobile:opacity-90 desktop:leading-10 mobile:leading-10 desktop:text-center mobile:text-center desktop:cursor-pointer mobile:cursor-pointer desktop:mt-[15px] mobile:mt-[15px] desktop:transition-[300ms] mobile:transition-[300px] desktop:bg-white mobile:bg-white desktop:hover:bg-[red] mobile:hover:bg-[red] desktop:hover:text-white mobile:hover:text-white;
   }
   .lottery-left {
-    @apply w-[40%] h-[320px] flex flex-row justify-center;
+    @apply desktop:w-[40%] mobile:w-full desktop:h-[320px] desktop:flex desktop:flex-row desktop:justify-center mobile:mr-[100px];
   }
   .image-of-lottery {
-    @apply w-[330px] h-[320px] object-cover;
+    @apply desktop:w-[330px] desktop:h-[320px] desktop:object-cover;
   }
   .hr-lottery {
-    @apply w-full h-[2px] opacity-70 bg-[lightgray] mt-[15px];
+    @apply desktop:w-full desktop:h-[2px] desktop:opacity-70 desktop:bg-[lightgray] desktop:mt-[15px];
   }
 }
 @layer components {
@@ -228,10 +248,13 @@ html {
     @apply desktop:w-full mobile:w-full desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-wrap mobile:flex-wrap desktop:items-center mobile:items-center desktop:justify-center mobile:justify-center desktop:mb-[70px] mobile:mb-[70px];
   }
   .introduce-item {
-    @apply desktop:w-1/2 mobile:w-1/2 desktop:mt-[50px] mobile:mt-[50px];
+    @apply desktop:w-1/2 mobile:w-[92%] desktop:mt-[50px] mobile:mt-[50px];
+  }
+  .introduce-item-second {
+    @apply desktop:w-1/2 desktop:mt-[50px] mobile:w-[92%] mobile:mt-[50px];
   }
   .heading-of-introduce {
-    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[red] mobile:text-[red] desktop:text-xl mobile:text-[xl] desktop:font-bold mobile:font-bold desktop:mb-[15px] mobile:mb-[15px];
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[red] mobile:text-[red] mobile:font-bold desktop:text-xl mobile:text-[17px] desktop:font-bold desktop:mb-[15px] mobile:mb-[15px];
   }
   .paragraph-of-introduce {
     @apply font-[Golestan] text-base opacity-60 leading-8 text-justify;
@@ -240,7 +263,7 @@ html {
     @apply desktop:w-full desktop:mt-[120px] desktop:flex desktop:flex-row desktop:flex-nowrap desktop:justify-between desktop:gap-x-[15px];
   }
   .item-item-introduce {
-    @apply desktop:w-[180px] desktop:h-[260px] desktop:flex desktop:flex-col desktop:flex-wrap desktop:justify-center desktop:items-center desktop:gap-x-[15px] desktop:border-b desktop:border-solid desktop:border-gray-400;
+    @apply desktop:w-[180px] mobile:hidden desktop:h-[260px] desktop:flex desktop:flex-col desktop:flex-wrap desktop:justify-center desktop:items-center desktop:gap-x-[15px] desktop:border-b desktop:border-solid desktop:border-gray-400;
   }
   .image-of-introduce {
     @apply desktop:w-[180px] desktop:h-[180px] desktop:object-cover;
@@ -254,116 +277,116 @@ html {
 }
 @layer components {
   .rice-container {
-    @apply w-full h-[500px] bg-[#E9D69F] flex flex-col flex-nowrap justify-start mt-[18px] relative;
+    @apply desktop:w-full mobile:w-full desktop:h-[500px] mobile:h-[320px] desktop:bg-[#E9D69F] desktop:flex desktop:flex-col desktop:flex-nowrap desktop:justify-start desktop:mt-[18px] mobile:mt-[25px] desktop:relative mobile:relative;
   }
   .image-of-container {
-    @apply object-cover w-full h-[480px];
+    @apply desktop:object-cover mobile:object-cover desktop:w-full mobile:w-full desktop:h-[480px] mobile:h-full;
   }
   .little-red-box {
-    @apply w-[300px] h-[100px] bg-[#ED1C24] flex flex-col flex-nowrap justify-start items-start pt-[10px] pr-[30px] absolute left-[57%] bottom-0 gap-y-[13px];
+    @apply desktop:w-[300px] mobile:w-full desktop:h-[100px] mobile:h-[100px] desktop:bg-[#ED1C24] mobile:bg-[#ED1C24] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-nowrap mobile:flex-nowrap desktop:justify-start mobile:justify-start desktop:items-start mobile:items-start desktop:pt-[10px] mobile:pt-[10px] desktop:pr-[30px] mobile:pr-[30px] desktop:absolute mobile:absolute desktop:left-[57%] desktop:bottom-0 mobile:bottom-0 desktop:gap-y-[13px] mobile:gap-y-[13px];
   }
   .text-in-box {
-    @apply font-[Golestan] text-[whitesmoke] text-3xl font-normal;
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[whitesmoke] mobile:text-[whitesmoke] desktop:text-3xl mobile:text-3xl desktop:font-normal mobile:font-normal;
   }
   .span-in-box {
-    @apply font-[Golestan] text-[whitesmoke] text-sm font-normal;
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[whitesmoke] mobile:text-[whitesmoke] desktop:text-sm mobile:text-[16px] desktop:font-normal;
   }
   .line-container {
-    @apply w-full h-[2px] opacity-70 bg-[lightgray] mt-[35px];
+    @apply w-full h-[2px] opacity-70 bg-[lightgray] mt-[35px] mobile:hidden;
   }
 }
 @layer components {
   .persian {
-    @apply w-full h-[400px] flex flex-row flex-wrap justify-center items-center;
+    @apply desktop:w-full mobile:w-full desktop:h-[400px] mobile:h-[400px] desktop:flex mobile:flex desktop:flex-row mobile:flex-row desktop:flex-wrap mobile:flex-wrap desktop:justify-center mobile:justify-center desktop:items-center mt-[70px];
   }
   .persian-item {
-    @apply w-[48%] h-[350px] mt-[25px];
+    @apply desktop:w-[48%] mobile:w-[92%] desktop:h-[350px] mobile:h-full desktop:mt-[25px];
   }
   .heading-of-persian {
-    @apply font-[Golestan] text-xl font-bold text-[red] mb-[15px];
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-xl mobile:text-xl desktop:font-bold mobile:font-bold desktop:text-[red] mobile:text-[red] desktop:mb-[15px] mobile:mb-[15px];
   }
   .paragraph-of-persian {
-    @apply font-[Golestan] text-[15px] text-[#2b2b2b] opacity-70 leading-9 text-justify;
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[15px] mobile:text-[15px] desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:opacity-70 mobile:opacity-70 desktop:leading-9 mobile:leading-9 desktop:text-justify mobile:text-justify;
   }
   .btn-of-persian {
-    @apply w-[140px] h-[40px] font-[Golestan] text-[16px] border border-gray-300 rounded-[8px] bg-[white] mt-[20px] text-[#888888] duration-300 hover:text-[white] hover:bg-[red];
+    @apply desktop:w-[140px] mobile:w-[140px] desktop:h-[40px] mobile:h-[40px] desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[16px] mobile:text-[16px] desktop:border mobile:border mobile:border-gray-300 desktop:border-gray-300 mobile:rounded-[8px] desktop:rounded-[8px] desktop:bg-[white] mobile:bg-[white] desktop:mt-[20px] mobile:mt-[50px] desktop:text-[#888888] mobile:text-[#888888] desktop:duration-300 mobile:duration-300 desktop:hover:text-[white] mobile:hover:text-[white] desktop:hover:bg-[red] mobile:hover:bg-[red];
   }
 }
 @layer components {
   .box-tea {
-    @apply w-full h-[500px] bg-[#e9d69f] flex flex-col flex-wrap justify-start relative;
+    @apply desktop:w-full mobile:w-full desktop:h-[500px] mobile:h-[300px] desktop:bg-[#e9d69f] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-wrap mobile:flex-wrap desktop:justify-start mobile:justify-start desktop:relative mobile:relative;
   }
   .image-of-box {
-    @apply w-full h-[480px] object-cover;
+    @apply desktop:w-full mobile:w-full desktop:h-[480px] mobile:h-full desktop:object-cover mobile:object-cover;
   }
   .line-tea {
-    @apply w-full h-[2px] opacity-70 bg-[lightgray] mt-[35px];
+    @apply desktop:w-full desktop:h-[2px] desktop:opacity-70 desktop:bg-[lightgray] desktop:mt-[35px];
   }
 }
 @layer components {
   .history {
-    @apply w-full h-[450px] flex flex-row flex-wrap justify-center;
+    @apply desktop:w-full mobile:w-full desktop:h-[450px] mobile:h-[450px] desktop:flex mobile:flex desktop:flex-row mobile:flex-row desktop:flex-wrap mobile:flex-wrap desktop:justify-center mobile:justify-center;
   }
   .history-items {
-    @apply w-[45%] h-[450px];
+    @apply desktop:w-[45%] mobile:w-[92%] desktop:h-[450px] mobile:h-full;
   }
   .history-first-item {
-    @apply w-full h-[50%] pt-[30px] pr-[20px];
+    @apply desktop:w-full mobile:w-full desktop:h-[50%] mobile:h-[50%] desktop:pt-[30px] mobile:pt-[20px] desktop:pr-[20px] mobile:pr-[20px];
   }
   .heading-of-history {
-    @apply font-[Golestan] text-[20px] text-[#ff0000] mb-[10px] font-bold;
+    @apply desktop:font-[Golestan] desktop:text-[20px] mobile:text-[18px] desktop:text-[#ff0000] mobile:text-[#ff0000] desktop:mb-[10px] mobile:mb-[10px] desktop:font-bold mobile:font-bold;
   }
   .paragraph-of-history {
-    @apply font-[Golestan] text-[15px] text-[#2b2b2b] opacity-70 text-justify leading-[35px];
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[15px] mobile:text-[15px] desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:opacity-70 mobile:opacity-70 desktop:text-justify mobile:text-justify desktop:leading-[35px] mobile:leading-[35px];
   }
   .history-second-item {
-    @apply w-full h-[50%] pr-[20px];
+    @apply desktop:w-full mobile:w-full desktop:h-[50%] mobile:h-[50%] desktop:pr-[20px] mobile:pr-[20px];
   }
   .btn-of-history {
-    @apply w-[140px] h-[40px] font-[Golestan] text-[16px] border border-gray-300 rounded-[8px] bg-[white] mt-[20px] text-[#888888] duration-300 hover:text-[white] hover:bg-[red];
+    @apply desktop:w-[140px] mobile:w-[140px] desktop:h-[40px] mobile:h-[40px] desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[16px] mobile:text-[16px] desktop:border mobile:border desktop:border-gray-300 mobile:border-gray-300 desktop:rounded-[8px] mobile:rounded-[8px] desktop:bg-[white] mobile:bg-[white] desktop:mt-[20px] mobile:mt-[20px] desktop:text-[#888888] mobile:text-[#888888] desktop:duration-300 mobile:duration-300 desktop:hover:text-[white] mobile:hover:text-[white] desktop:hover:bg-[red] mobile:hover:bg-[red];
   }
 }
 @layer components {
   .pistachio {
-    @apply w-full h-[500px] bg-[#e9d69f] flex flex-col flex-nowrap justify-start mt-[18px] relative;
+    @apply desktop:w-full mobile:w-full desktop:h-[500px] mobile:h-[320px] desktop:bg-[#e9d69f] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-nowrap mobile:flex-nowrap desktop:justify-start mobile:justify-start desktop:mt-[18px] mobile:mt-[18px] desktop:relative mobile:relative;
   }
   .image-of-pistachio {
-    @apply object-cover w-full h-[480px];
+    @apply desktop:object-cover mobile:object-cover desktop:w-full mobile:w-full desktop:h-[480px] mobile:h-[320px];
   }
-  .pictachio-items {
-    @apply w-[300px] h-[100px] bg-[#ed1c24] flex flex-col flex-nowrap justify-start items-start pt-[10px] pr-[30px] absolute left-[57%] bottom-0 gap-y-[13px];
+  .pistachio-items {
+    @apply desktop:w-[300px] mobile:w-full desktop:h-[100px] mobile:h-[100px] desktop:bg-[#ed1c24] mobile:bg-[#ed1c24] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-nowrap mobile:flex-nowrap desktop:justify-start mobile:justify-start desktop:items-start mobile:items-start desktop:pt-[10px] mobile:pt-[10px] desktop:pr-[30px] mobile:pr-[30px] desktop:absolute mobile:absolute desktop:left-[57%] mobile:bottom-0 desktop:bottom-0 desktop:gap-y-[13px] mobile:gap-y-[13px];
   }
   .heading-of-pistachio {
-    @apply font-[Golestan] text-[whitesmoke] text-[26px] font-normal;
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[whitesmoke] mobile:text-[whitesmoke] desktop:text-[26px] mobile:text-[26px] desktop:font-normal mobile:font-normal;
   }
   .span-of-pistachio {
-    @apply font-[Golestan] text-[whitesmoke] text-[14px];
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[whitesmoke] mobile:text-[whitesmoke] desktop:text-[14px] mobile:text-[14px];
   }
   .line-pistachio {
-    @apply w-full h-[2px] opacity-70 bg-[lightgray] mt-[35px];
+    @apply desktop:w-full desktop:h-[2px] desktop:opacity-70 desktop:bg-[lightgray] desktop:mt-[35px] mobile:hidden;
   }
 }
 @layer components {
   .nuts {
-    @apply w-full h-[450px] flex flex-row flex-wrap justify-center;
+    @apply desktop:w-full mobile:w-full desktop:h-[450px] mobile:h-[450px] desktop:flex mobile:flex desktop:flex-row mobile:flex-row desktop:flex-wrap mobile:flex-wrap desktop:justify-center mobile:justify-center mobile:pt-[50px];
   }
   .nuts-items {
-    @apply w-[45%] h-[450px];
+    @apply desktop:w-[45%] mobile:w-[92%] desktop:h-[450px] mobile:h-full;
   }
   .nuts-first-item {
-    @apply w-full h-[50%] pt-[30px] pr-[20px] flex flex-col flex-wrap justify-center;
+    @apply desktop:w-full mobile:w-full desktop:h-[38%] mobile:h-[40%] mobile:pt-[30px] desktop:pr-[20px] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-wrap mobile:flex-wrap;
   }
   .heading-of-nuts {
-    @apply font-[Golestan] text-[20px] text-[#ff0000] mb-[10px] font-bold;
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[20px] mobile:text-[18px] desktop:text-[#ff0000] mobile:text-[#ff0000] desktop:mb-[10px] mobile:mb-[10px] desktop:font-bold mobile:font-bold;
   }
   .paragraph-of-nuts {
-    @apply font-[Golestan] text-[16px] text-[#2b2b2b] opacity-70 text-justify leading-8;
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[16px] mobile:text-[16px] desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:opacity-70 mobile:opacity-70 desktop:text-justify mobile:text-justify desktop:leading-8 mobile:leading-8;
   }
   .nuts-second-item {
-    @apply w-full h-[50%] pr-[20px];
+    @apply desktop:w-full mobile:w-full desktop:h-[40%] mobile:h-[50%] desktop:pr-[20px];
   }
   .btn-of-nuts {
-    @apply w-[140px] h-[40px] font-[Golestan] text-[16px] border border-gray-300 rounded-[8px] bg-[white] mt-[20px] text-[#888888] duration-300 hover:text-[white] hover:bg-[red];
+    @apply desktop:w-[140px] mobile:w-[140px] desktop:h-[40px] mobile:h-[40px] desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[16px] mobile:font-[16px] desktop:border mobile:border desktop:border-gray-300 mobile:border-gray-300 desktop:rounded-[8px] mobile:rounded-[8px] desktop:bg-[white] mobile:bg-[white] desktop:mt-[20px] mobile:mt-[20px] desktop:text-[#888888] mobile:text-[#888888] desktop:duration-300 mobile:duration-300 desktop:hover:text-[white] mobile:hover:text-[white] desktop:hover:bg-[red] mobile:hover:bg-[red];
   }
 }
 @layer components {
@@ -372,40 +395,46 @@ html {
   }
 }
 @layer components {
-  .magazine {
-    @apply w-full h-[120px] flex flex-col flex-wrap justify-center pr-[300px];
+  .magazine-golestan {
+    @apply desktop:w-full mobile:w-full desktop:h-[120px] mobile:h-[120px] desktop:flex mobile:flex desktop:flex-col mobile:flex-row desktop:flex-wrap mobile:flex-nowrap desktop:justify-center mobile:items-center desktop:pr-[300px] mobile:pr-10;
   }
   .heading-of-magazine {
-    @apply w-full h-fit font-[Golestan] font-bold text-[20px] text-[#ff0000];
+    @apply desktop:w-full mobile:w-full desktop:h-fit mobile:h-fit desktop:font-[Golestan] mobile:font-[Golestan] desktop:font-bold mobile:font-bold desktop:text-[20px] mobile:text-[20px] desktop:text-[#ff0000] mobile:text-[#ff0000];
   }
 }
 @layer components {
   .food {
-    @apply w-full h-[750px] bg-[#cde4b0] flex flex-row flex-nowrap justify-center items-center gap-x-[10px];
+    @apply desktop:w-full mobile:w-full desktop:h-[750px] mobile:h-[1400px] desktop:bg-[#cde4b0] mobile:bg-[#cde4b0] mobile:flex desktop:flex desktop:flex-row mobile:flex-col desktop:flex-nowrap mobile:flex-wrap desktop:justify-center mobile:justify-center mobile:items-center desktop:items-center mobile:gap-y-[40px] desktop:gap-x-[10px];
   }
-  .food-containers {
-    @apply w-[310px] h-[600px] bg-[white];
+  .food-containers-1 {
+    @apply desktop:w-[310px] mobile:w-[310px] desktop:h-[600px] mobile:h-[600px] desktop:bg-[white] mobile:bg-[white];
+  }
+  .food-containers-2 {
+    @apply desktop:w-[310px] mobile:w-[310px] desktop:h-[600px] mobile:h-[600px] desktop:bg-[white] mobile:bg-[white];
+  }
+  .food-containers-3 {
+    @apply desktop:w-[310px] desktop:h-[600px] desktop:bg-[white] mobile:hidden;
   }
   .food-box {
-    @apply w-[310px] h-[300px];
+    @apply desktop:w-[310px] mobile:w-[310px] desktop:h-[300px] mobile:h-[300px];
   }
   .image-of-food {
-    @apply w-[310px] h-[300px] object-cover hover:opacity-80;
+    @apply desktop:w-[310px] mobile:w-[310px] desktop:h-[300px] mobile:h-full desktop:object-cover mobile:object-cover desktop:hover:opacity-80 mobile:hover:opacity-80;
   }
   .header-box-food {
-    @apply w-full h-[60px] flex flex-col justify-center;
+    @apply desktop:w-full mobile:w-full desktop:h-[60px] mobile:h-[60px] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:justify-center mobile:justify-center;
   }
   .header-food {
-    @apply font-[Golestan] text-[20px] text-[#ed1c24] font-normal mr-[20px];
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[20px] mobile:text-[20px] desktop:text-[#ed1c24] mobile:text-[#ed1c24] desktop:font-normal mobile:font-normal desktop:mr-[20px] mobile:mr-[20px];
   }
   .explain-of-food {
-    @apply w-full h-[140px];
+    @apply desktop:w-full mobile:w-full desktop:h-[140px] mobile:h-[140px];
   }
   .paragraph-of-food {
-    @apply font-[Golestan] text-[15px] text-[#2b2b2b] opacity-70 text-justify mx-[20px] leading-8;
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[15px] mobile:text-[15px] desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:opacity-70 mobile:opacity-70 desktop:text-justify mobile:text-justify desktop:mx-[20px] mobile:mx-[20px] mobile:leading-8 desktop:leading-8;
   }
   .btn-food {
-    @apply w-[100px] h-[40px] flex flex-col justify-center items-center border border-[lightgray] rounded-[8px] mr-[20px] font-[Golestan] text-[15px] text-[#2b2b2b] opacity-80 duration-300 cursor-pointer hover:bg-[#ff0000] hover:text-white;
+    @apply desktop:w-[100px] mobile:w-[100px] desktop:h-[40px] mobile:h-[40px] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:justify-center mobile:justify-center desktop:items-center mobile:items-center desktop:border mobile:border desktop:border-[lightgray] mobile:border-[lightgray] desktop:rounded-[8px] mobile:rounded-[8px] desktop:mr-[20px] mobile:mr-[20px] desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[15px] desktop:text-[#2b2b2b] desktop:opacity-80 desktop:duration-300 desktop:cursor-pointer desktop:hover:bg-[#ff0000] desktop:hover:text-white;
   }
 }
 @layer components {
