@@ -187,31 +187,31 @@ html {
 }
 @layer components {
   .footer {
-    @apply w-full h-[500px] bg-[#2b2b2b] flex flex-col flex-nowrap justify-start items-center;
+    @apply desktop:w-full mobile:w-full desktop:h-[500px] mobile:h-[1700px] desktop:bg-[#2b2b2b] mobile:bg-[#2b2b2b] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-nowrap mobile:flex-wrap desktop:justify-start mobile:justify-start mobile:items-center desktop:items-center;
   }
   .footer-item {
-    @apply w-[80%] h-[85%] flex flex-row flex-wrap justify-center items-center gap-x-5;
+    @apply desktop:w-[80%] mobile:w-[90%] desktop:h-[85%] mobile:h-full desktop:flex mobile:flex desktop:flex-row mobile:flex-col desktop:flex-wrap mobile:flex-wrap desktop:justify-center mobile:justify-start desktop:items-center mobile:items-center desktop:gap-x-5 mobile:gap-y-5;
   }
   .footer-box {
-    @apply w-[170px]  h-[360px] mt-[10px] flex flex-col flex-wrap justify-start items-center;
+    @apply desktop:w-[170px] mobile:w-[170px] desktop:h-[360px] mobile:h-[360px] desktop:mt-[10px] mobile:mt-[30px] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-wrap mobile:flex-nowrap desktop:justify-start mobile:justify-start desktop:items-center mobile:items-center;
   }
   .image-of-footer {
-    @apply w-[130px] h-[100px] bg-cover;
+    @apply desktop:w-[130px] desktop:h-[100px] desktop:bg-cover mobile:bg-cover;
   }
   .text-of-footer {
-    @apply h-[50px] border-y border-slate-300 w-full mt-[22px] flex flex-row flex-wrap justify-center items-center font-[Golestan] text-[whitesmoke];
+    @apply desktop:h-[50px] mobile:h-[50px] desktop:border-y mobile:border-y desktop:border-slate-300 mobile:border-[#6d6d6d] desktop:w-full mobile:w-[600px] desktop:mt-[22px] mobile:mt-[22px] desktop:flex mobile:flex desktop:flex-row mobile:flex-row desktop:flex-wrap mobile:flex-wrap desktop:justify-center mobile:justify-center desktop:items-center mobile:items-center desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[whitesmoke] mobile:text-[whitesmoke];
   }
   .classification {
-    @apply w-full h-[150px] flex flex-col flex-nowrap justify-start gap-y-2 mt-[30px];
+    @apply desktop:w-full mobile:w-full desktop:h-[150px] mobile:h-[150px] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-nowrap mobile:flex-nowrap desktop:justify-start mobile:justify-start mobile:items-center desktop:gap-y-2 mobile:gap-y-2 desktop:mt-[30px] mobile:mt-[30px];
   }
   .classification-items {
-    @apply w-full font-[Golestan] text-[13px] text-[#a4a4a4];
+    @apply desktop:w-full desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[13px] mobile:text-[13px] desktop:text-[#a4a4a4] mobile:text-[#a4a4a4];
   }
   .end-of-footer {
-    @apply w-[80%] h-[30%] font-[Golestan] text-[14px] flex flex-col flex-wrap justify-center items-center text-[#cfcdcd] font-normal;
+    @apply desktop:w-[80%] mobile:w-full desktop:h-[30%] desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[14px] mobile:text-[14px] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-wrap mobile:flex-wrap desktop:justify-center mobile:justify-center desktop:items-center mobile:items-center desktop:text-[#cfcdcd] mobile:text-[#cfcdcd] desktop:font-normal mobile:font-normal;
   }
   .span-of-footer {
-    @apply font-normal text-[13px] text-[#868484];
+    @apply desktop:font-normal desktop:text-[13px] mobile:text-[13px] desktop:text-[#868484] mobile:text-[#868484];
   }
 }
 @layer components {
