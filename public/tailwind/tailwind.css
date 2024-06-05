@@ -49,7 +49,7 @@ html {
     @apply desktop:w-full mobile:w-full desktop:h-[100px] mobile:h-[170px] desktop:bg-[#2b2b2b] mobile:bg-[#2b2b2b] desktop:sticky mobile:sticky desktop:top-0 desktop:z-[99999] mobile:z-[99999];
   }
   .image-menu {
-    @apply desktop:absolute desktop:w-[170px] mobile:w-[170px] desktop:h-[105px] mobile:h-[105px] desktop:right-[210px] mobile:right-[290px] desktop:top-[50px] mobile:top-[10px] mobile:absolute;
+    @apply desktop:absolute desktop:w-[170px] mobile:w-[170px] desktop:h-[105px] mobile:h-[105px] desktop:right-[210px] mobile:right-64 desktop:top-[50px] mobile:top-[10px] mobile:absolute;
   }
   .menu-nav {
     @apply desktop:w-full desktop:h-[100px] desktop:flex desktop:flex-nowrap desktop:flex-row desktop:justify-center desktop:items-center desktop:pt-[50px] desktop:pr-[90px] desktop:relative mobile:hidden;
@@ -58,10 +58,10 @@ html {
     @apply desktop:w-fit desktop:h-[30px] desktop:flex desktop:flex-wrap desktop:flex-row desktop:justify-center desktop:items-center desktop:border-l desktop:border-solid desktop:border-l-[#665F5F] desktop:mb-[30px];
   }
   .nav-item:hover > .sub-menu-company {
-    @apply desktop:block desktop:duration-500 desktop:transition-all desktop:delay-300;
+    @apply desktop:block desktop:duration-700 desktop:transition-all desktop:delay-300;
   }
   .nav-item:hover > .sub-menu-category {
-    @apply desktop:block desktop:duration-500 desktop:transition-all desktop:delay-300;
+    @apply desktop:block desktop:duration-700 desktop:transition-all desktop:delay-300;
   }
   .nav-item:hover > .sub-menu-weblog {
     @apply desktop:block desktop:duration-500 desktop:transition-all desktop:delay-300;
@@ -141,48 +141,48 @@ html {
 }
 @layer components {
   .magazine {
-    @apply w-full h-[168px] flex flex-row items-center pr-[250px] mt-[30px];
+    @apply desktop:w-full mobile:w-full desktop:h-[168px] mobile:h-[168px] desktop:flex mobile:flex desktop:flex-row mobile:flex-row desktop:items-center mobile:items-center desktop:pr-[250px] mobile:pr-[25px] desktop:mt-[30px] mobile:mt-[30px];
   }
   .magazine-item {
-    @apply w-fit h-[50px];
+    @apply desktop:w-fit mobile:w-fit desktop:h-[50px] mobile:h-[50px];
   }
   .weblog {
-    @apply font-[Golestan] text-[21px] text-[#8b8888] font-bold;
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[22px] mobile:text-[21px] desktop:text-[#8b8888] mobile:text-[#8b8888] desktop:font-bold mobile:font-bold;
   }
   .cooking {
-    @apply font-[Golestan] text-[red];
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[red] mobile:text-[red];
   }
 }
 @layer components {
   .products {
-    @apply w-full h-fit bg-[#F7F9FB] flex flex-wrap flex-row justify-center items-center;
+    @apply desktop:w-full mobile:w-full desktop:h-fit mobile:h-fit  desktop:bg-[#F7F9FB] mobile:bg-[#F7F9FB] desktop:flex mobile:flex desktop:flex-wrap mobile:flex-wrap desktop:flex-row mobile:flex-col desktop:justify-center mobile:items-center desktop:items-center mobile:justify-center;
   }
   .products-item {
-    @apply w-[65%] h-fit bg-[#F7F9FB] flex flex-row flex-wrap gap-x-4 gap-y-20 mt-[80px];
+    @apply desktop:w-[65%] mobile:w-[50%] desktop:h-fit mobile:h-fit desktop:bg-[#F7F9FB] desktop:flex mobile:flex desktop:flex-row mobile:flex-col desktop:flex-wrap mobile:flex-wrap desktop:gap-x-4 mobile:gap-y-20 desktop:gap-y-20 desktop:mt-[80px] mobile:mt-[80px];
   }
   .products-box {
-    @apply w-[310px] h-[600px] shadow-md;
+    @apply desktop:w-[310px] mobile:w-[310px] desktop:h-[600px] mobile:h-[600px] desktop:shadow-md mobile:shadow-md;
   }
   .first-product-item {
-    @apply w-[310px] h-fit;
+    @apply desktop:w-[310px] mobile:w-[310px] desktop:h-fit mobile:h-fit;
   }
   .image-of-products {
-    @apply w-[310px] h-[300px] object-cover hover:opacity-80;
+    @apply desktop:w-[310px] mobile:w-full desktop:h-[300px] mobile:h-[300px] desktop:object-cover mobile:object-cover desktop:hover:opacity-80 mobile:hover:opacity-85;
   }
   .second-products-item {
-    @apply w-full h-[60px] flex flex-col justify-end;
+    @apply desktop:w-full mobile:w-full desktop:h-[60px] mobile:h-[60px] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:justify-end mobile:justify-end;
   }
   .name-of-food {
-    @apply font-[Golestan] text-[20px] text-[#ed1c24] font-normal mr-[20px];
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[20px] mobile:text-[20px] desktop:text-[#ed1c24] mobile:text-[#ed1c24] desktop:font-normal mobile:font-normal desktop:mr-[20px] mobile:mr-[20px];
   }
   .explanation-of-food {
-    @apply font-[Golestan] text-[15px] text-[#2b2b2b] opacity-70 text-justify mx-[20px] leading-7 mt-[20px];
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[15px] mobile:text-[15px] desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:opacity-70 mobile:opacity-70 desktop:text-justify mobile:text-justify desktop:mx-[20px] mobile:mx-[20px] desktop:leading-7 mobile:leading-7 desktop:mt-[20px] mobile:mt-[20px];
   }
   .btm-item {
-    @apply w-full h-fit;
+    @apply desktop:w-full mobile:w-full desktop:h-fit mobile:h-fit;
   }
   .btm {
-    @apply w-[100px] h-[40px] flex flex-col justify-center items-center border border-[lightgray] rounded-[8px] mt-[20px] mr-[20px] font-[Golestan] text-[15px] text-[#2b2b2b] opacity-80 duration-300 cursor-pointer hover:bg-[#ff0000] hover:text-white;
+    @apply desktop:w-[100px] mobile:w-[100px] desktop:h-[40px] mobile:h-[40px] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:justify-center mobile:justify-center desktop:items-center mobile:items-center desktop:border mobile:border desktop:border-[lightgray] mobile:border-[lightgray] desktop:rounded-[8px] mobile:rounded-[8px] desktop:mt-[20px] mobile:mt-[20px] desktop:mr-[20px] mobile:mr-[20px] desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[15px] mobile:text-[15px] desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:opacity-80 mobile:opacity-80 desktop:duration-300 mobile:duration-300 desktop:cursor-pointer mobile:cursor-pointer desktop:hover:bg-[#ff0000] mobile:hover:bg-[red] desktop:hover:text-white mobile:hover:text-[white];
   }
 }
 @layer components {
@@ -413,7 +413,7 @@ html {
     @apply desktop:w-[310px] mobile:w-[310px] desktop:h-[600px] mobile:h-[600px] desktop:bg-[white] mobile:bg-[white];
   }
   .food-containers-3 {
-    @apply desktop:w-[310px] desktop:h-[600px] desktop:bg-[white] mobile:hidden;
+    @apply desktop:inline-block desktop:w-[310px] desktop:h-[600px] desktop:bg-[white] mobile:hidden ;
   }
   .food-box {
     @apply desktop:w-[310px] mobile:w-[310px] desktop:h-[300px] mobile:h-[300px];
