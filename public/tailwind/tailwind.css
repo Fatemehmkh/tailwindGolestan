@@ -46,7 +46,7 @@ html {
 }
 @layer components {
   .menu {
-    @apply desktop:w-full mobile:w-full desktop:h-[100px] mobile:h-[170px] desktop:bg-[#2b2b2b] mobile:bg-[#2b2b2b] desktop:sticky mobile:sticky desktop:top-0 desktop:z-[99999] mobile:z-[99999];
+    @apply desktop:w-full mobile:w-full desktop:h-[100px] mobile:h-[170px] desktop:bg-[#2b2b2b] mobile:bg-[#2b2b2b] desktop:sticky mobile:sticky desktop:top-0 desktop:z-[99999] mobile:z-[99999] desktop:right-0 mobile:right-0;
   }
   .image-menu {
     @apply desktop:absolute desktop:w-[170px] mobile:w-[170px] desktop:h-[105px] mobile:h-[105px] desktop:right-[210px] mobile:right-64 desktop:top-[50px] mobile:top-[10px] mobile:absolute;
@@ -216,7 +216,10 @@ html {
 }
 @layer components {
   .lottery {
-    @apply desktop:w-full mobile:w-full desktop:h-[420px] mobile:h-[650px] desktop:bg-gradient-to-r from-[#FBFBFB] mobile:bg-gradient-to-r from-[#FBFBFB] to-[#D2D2D2] desktop:flex mobile:flex desktop:flex-row mobile:flex-col desktop:justify-center mobile:justify-center desktop:items-center;
+    @apply desktop:w-full mobile:w-full desktop:h-[420px] mobile:h-[650px] desktop:bg-gradient-to-r from-[#FBFBFB] mobile:bg-gradient-to-r from-[#FBFBFB] to-[#D2D2D2] desktop:flex mobile:flex desktop:flex-row mobile:flex-col desktop:justify-center mobile:justify-center desktop:items-center desktop:relative dark:text-[white];
+  }
+  .btndarkmode {
+    @apply desktop:w-[20px] desktop:h-[20px] desktop:bg-[#ce3f3f] desktop:absolute desktop:top-3 desktop:left-3 desktop:rounded-[50%] dark:bg-[#2b2b2b];
   }
   .lottery-right {
     @apply desktop:w-[40%] mobile:w-[98%] desktop:h-full mobile:h-full desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-wrap mobile:flex-wrap desktop:justify-center mobile:justify-center desktop:pr-[100px] mobile:pr-[40px] mt-[18px];
@@ -245,7 +248,7 @@ html {
 }
 @layer components {
   .introduce {
-    @apply desktop:w-full mobile:w-full desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-wrap mobile:flex-wrap desktop:items-center mobile:items-center desktop:justify-center mobile:justify-center desktop:mb-[70px] mobile:mb-[70px];
+    @apply desktop:w-full mobile:w-full desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-wrap mobile:flex-wrap desktop:items-center mobile:items-center desktop:justify-center mobile:justify-center desktop:mb-[70px] mobile:mb-[70px] dark:bg-[#08083d] dark:text-white;
   }
   .introduce-item {
     @apply desktop:w-1/2 mobile:w-[92%] desktop:mt-[50px] mobile:mt-[50px];
@@ -413,7 +416,7 @@ html {
     @apply desktop:w-[310px] mobile:w-[310px] desktop:h-[600px] mobile:h-[600px] desktop:bg-[white] mobile:bg-[white];
   }
   .food-containers-3 {
-    @apply desktop:inline-block desktop:w-[310px] desktop:h-[600px] desktop:bg-[white] mobile:hidden ;
+    @apply desktop:inline-block desktop:w-[310px] desktop:h-[600px] desktop:bg-[white] mobile:hidden;
   }
   .food-box {
     @apply desktop:w-[310px] mobile:w-[310px] desktop:h-[300px] mobile:h-[300px];
@@ -436,7 +439,6 @@ html {
   .btn-food {
     @apply desktop:w-[100px] mobile:w-[100px] desktop:h-[40px] mobile:h-[40px] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:justify-center mobile:justify-center desktop:items-center mobile:items-center desktop:border mobile:border desktop:border-[lightgray] mobile:border-[lightgray] desktop:rounded-[8px] mobile:rounded-[8px] desktop:mr-[20px] mobile:mr-[20px] desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[15px] mobile:text-[15px] desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:opacity-80 mobile:opacity-80 desktop:duration-300 mobile:duration-300 desktop:cursor-pointer mobile:cursor-pointer desktop:hover:bg-[#ff0000] mobile:hover:bg-[#ff0000] desktop:hover:text-white mobile:hover:text-[white];
   }
-
 }
 @layer components {
   .social {

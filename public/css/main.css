@@ -650,6 +650,7 @@ h1,
 @media (min-width: 0) {
   .menu {
     position: sticky;
+    right: 0px;
     z-index: 99999;
     height: 170px;
     width: 100%;
@@ -662,6 +663,7 @@ h1,
   .menu {
     position: sticky;
     top: 0px;
+    right: 0px;
     z-index: 99999;
     height: 100px;
     width: 100%;
@@ -1685,6 +1687,11 @@ h1,
   --tw-gradient-to: #D2D2D2 var(--tw-gradient-to-position);
 }
 
+.lottery:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 @media (min-width: 0) {
   .lottery {
     display: flex;
@@ -1698,6 +1705,7 @@ h1,
 
 @media (min-width: 1000px) {
   .lottery {
+    position: relative;
     display: flex;
     height: 420px;
     width: 100%;
@@ -1705,6 +1713,24 @@ h1,
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  }
+}
+
+.btndarkmode:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(43 43 43 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 1000px) {
+  .btndarkmode {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    --tw-bg-opacity: 1;
+    background-color: rgb(206 63 63 / var(--tw-bg-opacity));
   }
 }
 
@@ -1908,6 +1934,13 @@ h1,
     background-color: rgb(211 211 211 / var(--tw-bg-opacity));
     opacity: 0.7;
   }
+}
+
+.introduce:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 8 61 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 0) {

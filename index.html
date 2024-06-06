@@ -127,6 +127,7 @@
       <!--end menu-->
       <!--start lottery-->
       <div class="lottery">
+        <button class="btndarkmode"></button>
         <div class="lottery-right">
           <h1 class="heading-of-lottery">قرعه‌کشی ماهیانه گلستان</h1>
           <h2 class="second-heading-of-lottery">
@@ -542,6 +543,11 @@
       <!-- end footer -->
     </div>
     <!--end project-->
-    <script></script>
+    <script>
+      let btndarkmode = document.querySelector(".btndarkmode");
+      btndarkmode.addEventListener("click", function () {
+        document.children[0].classList.toggle("dark");
+      });
+    </script>
   </body>
 </html>
