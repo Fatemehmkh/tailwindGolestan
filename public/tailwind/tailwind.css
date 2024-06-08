@@ -14,10 +14,14 @@ html {
   direction: rtl;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 @layer base {
   .wrapper {
     @apply desktop:w-full mobile:w-full desktop:m-0 desktop:p-0 mobile:m-0 mobile:p-0 overflow-y-scroll no-scrollbar;
+  }
+  .top-top {
+    @apply desktop:w-[30px] mobile:w-[30px] desktop:h-[30px] mobile:h-[30px] desktop:bg-[lightgray] mobile:bg-[lightgray] desktop:rounded-[50%] dark:bg-[#d4d4c4] desktop:z-[999999] desktop:fixed desktop:bottom-2 desktop:left-16 mobile:fixed mobile:z-[999999] mobile:bottom-2 mobile:left-2 desktop:flex desktop:flex-row justify-center items-center;
   }
 }
 @layer base {
@@ -46,10 +50,10 @@ html {
 }
 @layer components {
   .menu {
-    @apply desktop:w-full mobile:w-full desktop:h-[100px] mobile:h-[170px] desktop:bg-[#2b2b2b] mobile:bg-[#2b2b2b] desktop:sticky mobile:sticky desktop:top-0 desktop:z-[99999] mobile:z-[99999] desktop:right-0 mobile:right-0;
+    @apply desktop:w-full mobile:w-full desktop:h-[100px] mobile:h-[170px] desktop:bg-[#2b2b2b] mobile:bg-[#2b2b2b] desktop:sticky mobile:sticky desktop:top-0 desktop:z-[99999] mobile:z-[99999] desktop:right-0 mobile:right-0 dark:bg-[#2b2b2b];
   }
   .image-menu {
-    @apply desktop:absolute desktop:w-[170px] mobile:w-[170px] desktop:h-[105px] mobile:h-[105px] desktop:right-[210px] mobile:right-64 desktop:top-[50px] mobile:top-[10px] mobile:absolute;
+    @apply desktop:absolute desktop:w-[170px] mobile:w-[170px] desktop:h-[105px] mobile:h-[105px] desktop:right-[210px] desktop:top-[50px]  mobile:absolute;
   }
   .menu-nav {
     @apply desktop:w-full desktop:h-[100px] desktop:flex desktop:flex-nowrap desktop:flex-row desktop:justify-center desktop:items-center desktop:pt-[50px] desktop:pr-[90px] desktop:relative mobile:hidden;
@@ -58,28 +62,28 @@ html {
     @apply desktop:w-fit desktop:h-[30px] desktop:flex desktop:flex-wrap desktop:flex-row desktop:justify-center desktop:items-center desktop:border-l desktop:border-solid desktop:border-l-[#665F5F] desktop:mb-[30px];
   }
   .nav-item:hover > .sub-menu-company {
-    @apply desktop:block desktop:duration-700 desktop:transition-all desktop:delay-300;
+    @apply desktop:block;
   }
   .nav-item:hover > .sub-menu-category {
-    @apply desktop:block desktop:duration-700 desktop:transition-all desktop:delay-300;
+    @apply desktop:block;
   }
   .nav-item:hover > .sub-menu-weblog {
-    @apply desktop:block desktop:duration-500 desktop:transition-all desktop:delay-300;
+    @apply desktop:block;
   }
   .nav-item:hover > .sub-menu-call {
-    @apply desktop:block desktop:duration-500 desktop:transition-all desktop:delay-300;
+    @apply desktop:block;
   }
   .nav-link {
     @apply desktop:block desktop:w-fit desktop:py-0 desktop:px-5 desktop:no-underline desktop:text-[#c4bcbc] desktop:font-[Golestan]  desktop:text-base desktop:cursor-pointer desktop:leading-[20px] desktop:hover:text-[white] desktop:duration-300;
   }
   .sub-menu-company {
-    @apply desktop:w-[180px] desktop:h-[41vh] desktop:bg-[#2b2b2b] desktop:absolute desktop:top-[83px] desktop:right-[35%] desktop:pr-[15px] desktop:pt-[10px] desktop:hidden;
+    @apply desktop:w-[180px] desktop:h-[41vh] desktop:bg-[#2b2b2b] desktop:absolute desktop:top-[83px] desktop:right-[35%] desktop:pr-[15px] desktop:pt-[10px] desktop:hidden desktop:transition-[500ms] desktop:delay-[500ms];
   }
   .sub-menu-category {
     @apply desktop:w-[182px] desktop:h-[70vh] desktop:bg-[#2b2b2b] desktop:absolute desktop:top-[83px] desktop:left-[45%]  desktop:pr-[15px] desktop:pt-[10px] desktop:hidden;
   }
   .sub-menu-weblog {
-    @apply desktop:w-[180px] desktop:h-[35vh] desktop:bg-[#2b2b2b] desktop:absolute desktop:top-[83px] desktop:left-[38%]  desktop:pr-[15px] pt-[10px] hidden;
+    @apply desktop:w-[180px] desktop:h-[35vh] desktop:bg-[#2b2b2b] desktop:absolute desktop:top-[83px] desktop:left-[38%]  desktop:pr-[15px] desktop:pt-[10px] desktop:hidden;
   }
   .sub-menu-call {
     @apply desktop:w-[180px] desktop:h-[20vh] desktop:bg-[#2b2b2b] desktop:absolute desktop:top-[83px] desktop:left-[20%]  desktop:pr-[15px] desktop:pt-[10px] desktop:hidden;
@@ -193,10 +197,10 @@ html {
     @apply desktop:w-[80%] mobile:w-[90%] desktop:h-[85%] mobile:h-full desktop:flex mobile:flex desktop:flex-row mobile:flex-col desktop:flex-wrap mobile:flex-wrap desktop:justify-center mobile:justify-start desktop:items-center mobile:items-center desktop:gap-x-5 mobile:gap-y-5;
   }
   .footer-box {
-    @apply desktop:w-[170px] mobile:w-[170px] desktop:h-[360px] mobile:h-[360px] desktop:mt-[10px] mobile:mt-[30px] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-wrap mobile:flex-nowrap desktop:justify-start mobile:justify-start desktop:items-center mobile:items-center;
+    @apply desktop:w-[170px] mobile:w-[170px] desktop:h-[370px] mobile:h-[360px] desktop:mt-[10px] mobile:mt-[30px] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-wrap mobile:flex-nowrap desktop:justify-start mobile:justify-start desktop:items-center mobile:items-center;
   }
   .image-of-footer {
-    @apply desktop:w-[130px] desktop:h-[100px] desktop:bg-cover mobile:bg-cover;
+    @apply desktop:w-[130px] desktop:h-[100px] desktop:bg-cover mobile:bg-cover desktop:hover:w-[140px] desktop:hover:h-[110px];
   }
   .text-of-footer {
     @apply desktop:h-[50px] mobile:h-[50px] desktop:border-y mobile:border-y desktop:border-slate-300 mobile:border-[#6d6d6d] desktop:w-full mobile:w-[600px] desktop:mt-[22px] mobile:mt-[22px] desktop:flex mobile:flex desktop:flex-row mobile:flex-row desktop:flex-wrap mobile:flex-wrap desktop:justify-center mobile:justify-center desktop:items-center mobile:items-center desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[whitesmoke] mobile:text-[whitesmoke];
@@ -205,10 +209,10 @@ html {
     @apply desktop:w-full mobile:w-full desktop:h-[150px] mobile:h-[150px] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-nowrap mobile:flex-nowrap desktop:justify-start mobile:justify-start mobile:items-center desktop:gap-y-2 mobile:gap-y-2 desktop:mt-[30px] mobile:mt-[30px];
   }
   .classification-items {
-    @apply desktop:w-full desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[13px] mobile:text-[13px] desktop:text-[#a4a4a4] mobile:text-[#a4a4a4];
+    @apply desktop:w-full desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[13px] mobile:text-[13px] desktop:text-[#a4a4a4] mobile:text-[#a4a4a4] desktop:hover:text-[white] mobile:hover:text-[white] desktop:duration-300;
   }
   .end-of-footer {
-    @apply desktop:w-[80%] mobile:w-full desktop:h-[30%] desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[14px] mobile:text-[14px] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-wrap mobile:flex-wrap desktop:justify-center mobile:justify-center desktop:items-center mobile:items-center desktop:text-[#cfcdcd] mobile:text-[#cfcdcd] desktop:font-normal mobile:font-normal;
+    @apply desktop:w-[80%] mobile:w-full desktop:h-[10%] desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[14px] mobile:text-[14px] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-wrap mobile:flex-wrap desktop:justify-center mobile:justify-center desktop:items-center mobile:items-center desktop:text-[#cfcdcd] mobile:text-[#cfcdcd] desktop:font-normal mobile:font-normal;
   }
   .span-of-footer {
     @apply desktop:font-normal desktop:text-[13px] mobile:text-[13px] desktop:text-[#868484] mobile:text-[#868484];
@@ -216,25 +220,25 @@ html {
 }
 @layer components {
   .lottery {
-    @apply desktop:w-full mobile:w-full desktop:h-[420px] mobile:h-[650px] desktop:bg-gradient-to-r from-[#FBFBFB] mobile:bg-gradient-to-r from-[#FBFBFB] to-[#D2D2D2] desktop:flex mobile:flex desktop:flex-row mobile:flex-col desktop:justify-center mobile:justify-center desktop:items-center desktop:relative dark:text-[white];
+    @apply desktop:w-full mobile:w-full desktop:h-[420px] mobile:h-[650px] desktop:bg-gradient-to-r from-[#FBFBFB] mobile:bg-gradient-to-r to-[#D2D2D2] desktop:flex mobile:flex desktop:flex-row mobile:flex-col desktop:justify-center mobile:justify-center desktop:items-center desktop:relative dark:text-[white] dark:from-[#3c3b3b] dark:to-[#565656];
   }
   .btndarkmode {
-    @apply desktop:w-[20px] desktop:h-[20px] desktop:bg-[#ce3f3f] desktop:absolute desktop:top-3 desktop:left-3 desktop:rounded-[50%] dark:bg-[#2b2b2b];
+    @apply desktop:w-[50px] mobile:w-[50px] desktop:h-[50px] mobile:h-[50px] desktop:bg-[lightgray] mobile:bg-[lightgray] desktop:rounded-[50%] dark:bg-[#d4d4c4] desktop:z-[999999] desktop:fixed desktop:bottom-2 desktop:left-2 mobile:fixed mobile:z-[999999] mobile:bottom-2 mobile:left-2;
   }
   .lottery-right {
     @apply desktop:w-[40%] mobile:w-[98%] desktop:h-full mobile:h-full desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-wrap mobile:flex-wrap desktop:justify-center mobile:justify-center desktop:pr-[100px] mobile:pr-[40px] mt-[18px];
   }
   .heading-of-lottery {
-    @apply desktop:w-fit mobile:w-fit desktop:text-[red] mobile:text-[red] desktop:text-3xl mobile:text-3xl desktop:mb-[10px] mobile:my-[15px];
+    @apply desktop:w-fit mobile:w-fit desktop:text-[red] mobile:text-[red] desktop:text-3xl mobile:text-3xl desktop:mb-[10px] mobile:my-[15px] dark:text-[#adad59];
   }
   .second-heading-of-lottery {
-    @apply desktop:w-fit mobile:w-fit desktop:text-[#2b2b2b] mobile:text-[#2b2b2b]  desktop:text-lg mobile:text-lg desktop:opacity-[0.8] mobile:opacity-[0.8] desktop:mb-[15px] mobile:mb-[15px];
+    @apply desktop:w-fit mobile:w-fit desktop:text-[#2b2b2b] mobile:text-[#2b2b2b]  desktop:text-lg mobile:text-lg desktop:opacity-[0.8] mobile:opacity-[0.8] desktop:mb-[15px] mobile:mb-[15px] dark:text-[#b4b460];
   }
   .paragraph-of-lottery {
-    @apply desktop:w-[88%] mobile:w-full desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:text-[15px] mobile:text-[15px]  desktop:opacity-60 mobile:opacity-60 desktop:mb-[10px] mobile:mb-[10px] desktop:leading-9 mobile:leading-9;
+    @apply desktop:w-[88%] mobile:w-full desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:text-[15px] mobile:text-[15px]  desktop:opacity-60 mobile:opacity-60 desktop:mb-[10px] mobile:mb-[10px] desktop:leading-9 mobile:leading-9 dark:text-[whitesmoke];
   }
   .btm-of-lottery {
-    @apply desktop:block mobile:block desktop:w-[120px] mobile:w-[120px] desktop:h-[40px] mobile:h-[40px] desktop:border mobile:border desktop:border-gray-300 mobile:border-gray-300 desktop:rounded-lg mobile:rounded-lg desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-sm mobile:text-[15px] desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:opacity-90 mobile:opacity-90 desktop:leading-10 mobile:leading-10 desktop:text-center mobile:text-center desktop:cursor-pointer mobile:cursor-pointer desktop:mt-[15px] mobile:mt-[15px] desktop:transition-[300ms] mobile:transition-[300px] desktop:bg-white mobile:bg-white desktop:hover:bg-[red] mobile:hover:bg-[red] desktop:hover:text-white mobile:hover:text-white;
+    @apply desktop:block mobile:block desktop:w-[120px] mobile:w-[120px] desktop:h-[40px] mobile:h-[40px] desktop:border mobile:border desktop:border-gray-300 mobile:border-gray-300 desktop:rounded-lg mobile:rounded-lg desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-sm mobile:text-[15px] desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:opacity-90 mobile:opacity-90 desktop:leading-10 mobile:leading-10 desktop:text-center mobile:text-center desktop:cursor-pointer mobile:cursor-pointer desktop:mt-[15px] mobile:mt-[15px] desktop:transition-[300ms] mobile:transition-[300px] desktop:bg-white mobile:bg-white desktop:hover:bg-[red] mobile:hover:bg-[red] desktop:hover:text-white mobile:hover:text-white dark:hover:bg-[#7d7d49] dark:hover:text-[#fefefe];
   }
   .lottery-left {
     @apply desktop:w-[40%] mobile:w-full desktop:h-[320px] desktop:flex desktop:flex-row desktop:justify-center mobile:mr-[100px];
@@ -243,12 +247,12 @@ html {
     @apply desktop:w-[330px] desktop:h-[320px] desktop:object-cover;
   }
   .hr-lottery {
-    @apply desktop:w-full desktop:h-[2px] desktop:opacity-70 desktop:bg-[lightgray] desktop:mt-[15px];
+    @apply desktop:w-full desktop:h-[2px] desktop:opacity-70 desktop:bg-[lightgray] desktop:mt-[15px] dark:hidden;
   }
 }
 @layer components {
   .introduce {
-    @apply desktop:w-full mobile:w-full desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-wrap mobile:flex-wrap desktop:items-center mobile:items-center desktop:justify-center mobile:justify-center desktop:mb-[70px] mobile:mb-[70px] dark:bg-[#08083d] dark:text-white;
+    @apply desktop:w-full mobile:w-full desktop:h-[900px] mobile:h-[600px] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-wrap mobile:flex-wrap desktop:items-center mobile:items-center desktop:justify-center mobile:justify-center dark:bg-[#2b2b2b] dark:text-white;
   }
   .introduce-item {
     @apply desktop:w-1/2 mobile:w-[92%] desktop:mt-[50px] mobile:mt-[50px];
@@ -257,7 +261,7 @@ html {
     @apply desktop:w-1/2 desktop:mt-[50px] mobile:w-[92%] mobile:mt-[50px];
   }
   .heading-of-introduce {
-    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[red] mobile:text-[red] mobile:font-bold desktop:text-xl mobile:text-[17px] desktop:font-bold desktop:mb-[15px] mobile:mb-[15px];
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[red] mobile:text-[red] mobile:font-bold desktop:text-xl mobile:text-[17px] desktop:font-bold desktop:mb-[15px] mobile:mb-[15px]  dark:text-[#bbbb5d];
   }
   .paragraph-of-introduce {
     @apply font-[Golestan] text-base opacity-60 leading-8 text-justify;
@@ -272,63 +276,63 @@ html {
     @apply desktop:w-[180px] desktop:h-[180px] desktop:object-cover;
   }
   .caption-of-introduce {
-    @apply desktop:font-[Golestan] desktop:text-base desktop:text-[#2b2b2b] desktop:opacity-60 desktop:font-normal mt-[20px];
+    @apply desktop:font-[Golestan] desktop:text-base desktop:text-[#2b2b2b] dark:text-[#fbfb6b] desktop:opacity-60 desktop:font-normal mt-[20px];
   }
   .hr-introduce {
-    @apply w-full h-[2px] opacity-70 bg-[lightgray] mt-[35px];
+    @apply w-full h-[2px] opacity-70 bg-[lightgray] dark:hidden;
   }
 }
 @layer components {
   .rice-container {
-    @apply desktop:w-full mobile:w-full desktop:h-[500px] mobile:h-[320px] desktop:bg-[#E9D69F] desktop:flex desktop:flex-col desktop:flex-nowrap desktop:justify-start desktop:mt-[18px] mobile:mt-[25px] desktop:relative mobile:relative;
+    @apply desktop:w-full mobile:w-full desktop:h-[500px] mobile:h-[320px] desktop:bg-[#E9D69F] desktop:flex desktop:flex-col desktop:flex-nowrap desktop:justify-start desktop:mt-[18px] dark:mt-0 mobile:mt-[25px] desktop:relative mobile:relative dark:bg-[#311331];
   }
   .image-of-container {
     @apply desktop:object-cover mobile:object-cover desktop:w-full mobile:w-full desktop:h-[480px] mobile:h-full;
   }
   .little-red-box {
-    @apply desktop:w-[300px] mobile:w-full desktop:h-[100px] mobile:h-[100px] desktop:bg-[#ED1C24] mobile:bg-[#ED1C24] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-nowrap mobile:flex-nowrap desktop:justify-start mobile:justify-start desktop:items-start mobile:items-start desktop:pt-[10px] mobile:pt-[10px] desktop:pr-[30px] mobile:pr-[30px] desktop:absolute mobile:absolute desktop:left-[57%] desktop:bottom-0 mobile:bottom-0 desktop:gap-y-[13px] mobile:gap-y-[13px];
+    @apply desktop:w-[300px] mobile:w-full desktop:h-[100px] mobile:h-[100px] desktop:bg-[#ED1C24] mobile:bg-[#ED1C24] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-nowrap mobile:flex-nowrap desktop:justify-start mobile:justify-start desktop:items-start mobile:items-start desktop:pt-[10px] mobile:pt-[10px] desktop:pr-[30px] mobile:pr-[30px] desktop:absolute mobile:absolute desktop:left-[57%] desktop:bottom-0 mobile:bottom-0 desktop:gap-y-[13px] mobile:gap-y-[13px] dark:bg-[#311331];
   }
   .text-in-box {
-    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[whitesmoke] mobile:text-[whitesmoke] desktop:text-3xl mobile:text-3xl desktop:font-normal mobile:font-normal;
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[whitesmoke] mobile:text-[whitesmoke] desktop:text-3xl mobile:text-3xl desktop:font-normal mobile:font-normal dark:text-[#eeee7e];
   }
   .span-in-box {
-    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[whitesmoke] mobile:text-[whitesmoke] desktop:text-sm mobile:text-[16px] desktop:font-normal;
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[whitesmoke] mobile:text-[whitesmoke] desktop:text-sm mobile:text-[16px] desktop:font-normal dark:text-[#8a8a4c];
   }
   .line-container {
-    @apply w-full h-[2px] opacity-70 bg-[lightgray] mt-[35px] mobile:hidden;
+    @apply w-full h-[2px] opacity-70 bg-[lightgray] mt-[35px] mobile:hidden dark:hidden;
   }
 }
 @layer components {
   .persian {
-    @apply desktop:w-full mobile:w-full desktop:h-[400px] mobile:h-[400px] desktop:flex mobile:flex desktop:flex-row mobile:flex-row desktop:flex-wrap mobile:flex-wrap desktop:justify-center mobile:justify-center desktop:items-center mt-[70px];
+    @apply desktop:w-full mobile:w-full desktop:h-[400px] mobile:h-[400px] desktop:flex mobile:flex desktop:flex-row mobile:flex-row desktop:flex-wrap mobile:flex-wrap desktop:justify-center mobile:justify-center desktop:items-center mt-[70px] dark:mt-0 dark:bg-[#494949];
   }
   .persian-item {
-    @apply desktop:w-[48%] mobile:w-[92%] desktop:h-[350px] mobile:h-full desktop:mt-[25px];
+    @apply desktop:w-[48%] mobile:w-[92%] desktop:h-[350px] mobile:h-full desktop:mt-[25px] mobile:mt-[30px];
   }
   .heading-of-persian {
-    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-xl mobile:text-xl desktop:font-bold mobile:font-bold desktop:text-[red] mobile:text-[red] desktop:mb-[15px] mobile:mb-[15px];
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-xl mobile:text-xl desktop:font-bold mobile:font-bold desktop:text-[red] mobile:text-[red] desktop:mb-[15px] mobile:mb-[15px] dark:text-[#e1e173];
   }
   .paragraph-of-persian {
-    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[15px] mobile:text-[15px] desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:opacity-70 mobile:opacity-70 desktop:leading-9 mobile:leading-9 desktop:text-justify mobile:text-justify;
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[15px] mobile:text-[15px] desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:opacity-70 mobile:opacity-70 desktop:leading-9 mobile:leading-9 desktop:text-justify mobile:text-justify dark:text-[whitesmoke];
   }
   .btn-of-persian {
-    @apply desktop:w-[140px] mobile:w-[140px] desktop:h-[40px] mobile:h-[40px] desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[16px] mobile:text-[16px] desktop:border mobile:border mobile:border-gray-300 desktop:border-gray-300 mobile:rounded-[8px] desktop:rounded-[8px] desktop:bg-[white] mobile:bg-[white] desktop:mt-[20px] mobile:mt-[50px] desktop:text-[#888888] mobile:text-[#888888] desktop:duration-300 mobile:duration-300 desktop:hover:text-[white] mobile:hover:text-[white] desktop:hover:bg-[red] mobile:hover:bg-[red];
+    @apply desktop:w-[140px] mobile:w-[140px] desktop:h-[40px] mobile:h-[40px] desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[16px] mobile:text-[16px] desktop:border mobile:border mobile:border-gray-300 desktop:border-gray-300 mobile:rounded-[8px] desktop:rounded-[8px] desktop:bg-[white] mobile:bg-[white] desktop:mt-[20px] mobile:mt-[50px] desktop:text-[#888888] mobile:text-[#888888] desktop:duration-300 mobile:duration-300 desktop:hover:text-[white] mobile:hover:text-[white] desktop:hover:bg-[red] mobile:hover:bg-[red] dark:hover:bg-[#a4a45b] dark:hover:text-[#2b2b2b];
   }
 }
 @layer components {
   .box-tea {
-    @apply desktop:w-full mobile:w-full desktop:h-[500px] mobile:h-[300px] desktop:bg-[#e9d69f] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-wrap mobile:flex-wrap desktop:justify-start mobile:justify-start desktop:relative mobile:relative;
+    @apply desktop:w-full mobile:w-full desktop:h-[500px] mobile:h-[300px] desktop:bg-[#e9d69f] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-wrap mobile:flex-wrap desktop:justify-start mobile:justify-start desktop:relative mobile:relative dark:bg-[#311331];
   }
   .image-of-box {
     @apply desktop:w-full mobile:w-full desktop:h-[480px] mobile:h-full desktop:object-cover mobile:object-cover;
   }
   .line-tea {
-    @apply desktop:w-full desktop:h-[2px] desktop:opacity-70 desktop:bg-[lightgray] desktop:mt-[35px];
+    @apply desktop:w-full desktop:h-[2px] desktop:opacity-70 desktop:bg-[lightgray] desktop:mt-[35px] dark:hidden;
   }
 }
 @layer components {
   .history {
-    @apply desktop:w-full mobile:w-full desktop:h-[450px] mobile:h-[450px] desktop:flex mobile:flex desktop:flex-row mobile:flex-row desktop:flex-wrap mobile:flex-wrap desktop:justify-center mobile:justify-center;
+    @apply desktop:w-full mobile:w-full desktop:h-[450px] mobile:h-[450px] desktop:flex mobile:flex desktop:flex-row mobile:flex-row desktop:flex-wrap mobile:flex-wrap desktop:justify-center mobile:justify-center dark:bg-[#494949];
   }
   .history-items {
     @apply desktop:w-[45%] mobile:w-[92%] desktop:h-[450px] mobile:h-full;
@@ -337,41 +341,41 @@ html {
     @apply desktop:w-full mobile:w-full desktop:h-[50%] mobile:h-[50%] desktop:pt-[30px] mobile:pt-[20px] desktop:pr-[20px] mobile:pr-[20px];
   }
   .heading-of-history {
-    @apply desktop:font-[Golestan] desktop:text-[20px] mobile:text-[18px] desktop:text-[#ff0000] mobile:text-[#ff0000] desktop:mb-[10px] mobile:mb-[10px] desktop:font-bold mobile:font-bold;
+    @apply desktop:font-[Golestan] desktop:text-[20px] mobile:text-[18px] desktop:text-[#ff0000] mobile:text-[#ff0000] desktop:mb-[10px] mobile:mb-[10px] desktop:font-bold mobile:font-bold dark:text-[#d7d76d];
   }
   .paragraph-of-history {
-    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[15px] mobile:text-[15px] desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:opacity-70 mobile:opacity-70 desktop:text-justify mobile:text-justify desktop:leading-[35px] mobile:leading-[35px];
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[15px] mobile:text-[15px] desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:opacity-70 mobile:opacity-70 desktop:text-justify mobile:text-justify desktop:leading-[35px] mobile:leading-[35px] dark:text-[white];
   }
   .history-second-item {
     @apply desktop:w-full mobile:w-full desktop:h-[50%] mobile:h-[50%] desktop:pr-[20px] mobile:pr-[20px];
   }
   .btn-of-history {
-    @apply desktop:w-[140px] mobile:w-[140px] desktop:h-[40px] mobile:h-[40px] desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[16px] mobile:text-[16px] desktop:border mobile:border desktop:border-gray-300 mobile:border-gray-300 desktop:rounded-[8px] mobile:rounded-[8px] desktop:bg-[white] mobile:bg-[white] desktop:mt-[20px] mobile:mt-[20px] desktop:text-[#888888] mobile:text-[#888888] desktop:duration-300 mobile:duration-300 desktop:hover:text-[white] mobile:hover:text-[white] desktop:hover:bg-[red] mobile:hover:bg-[red];
+    @apply desktop:w-[140px] mobile:w-[140px] desktop:h-[40px] mobile:h-[40px] desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[16px] mobile:text-[16px] desktop:border mobile:border desktop:border-gray-300 mobile:border-gray-300 desktop:rounded-[8px] mobile:rounded-[8px] desktop:bg-[white] mobile:bg-[white] desktop:mt-[20px] mobile:mt-[20px] desktop:text-[#888888] mobile:text-[#888888] desktop:duration-300 mobile:duration-300 desktop:hover:text-[white] mobile:hover:text-[white] desktop:hover:bg-[red] mobile:hover:bg-[red] dark:hover:bg-[#91914a] dark:hover:text-[whitesmoke];
   }
 }
 @layer components {
   .pistachio {
-    @apply desktop:w-full mobile:w-full desktop:h-[500px] mobile:h-[320px] desktop:bg-[#e9d69f] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-nowrap mobile:flex-nowrap desktop:justify-start mobile:justify-start desktop:mt-[18px] mobile:mt-[18px] desktop:relative mobile:relative;
+    @apply desktop:w-full mobile:w-full desktop:h-[500px] mobile:h-[320px] desktop:bg-[#e9d69f] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-nowrap mobile:flex-nowrap desktop:justify-start mobile:justify-start desktop:mt-[18px] mobile:mt-[18px] desktop:relative mobile:relative dark:bg-[#311331] dark:mt-0;
   }
   .image-of-pistachio {
     @apply desktop:object-cover mobile:object-cover desktop:w-full mobile:w-full desktop:h-[480px] mobile:h-[320px];
   }
   .pistachio-items {
-    @apply desktop:w-[300px] mobile:w-full desktop:h-[100px] mobile:h-[100px] desktop:bg-[#ed1c24] mobile:bg-[#ed1c24] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-nowrap mobile:flex-nowrap desktop:justify-start mobile:justify-start desktop:items-start mobile:items-start desktop:pt-[10px] mobile:pt-[10px] desktop:pr-[30px] mobile:pr-[30px] desktop:absolute mobile:absolute desktop:left-[57%] mobile:bottom-0 desktop:bottom-0 desktop:gap-y-[13px] mobile:gap-y-[13px];
+    @apply desktop:w-[300px] mobile:w-full desktop:h-[100px] mobile:h-[100px] desktop:bg-[#ed1c24] mobile:bg-[#ed1c24] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-nowrap mobile:flex-nowrap desktop:justify-start mobile:justify-start desktop:items-start mobile:items-start desktop:pt-[10px] mobile:pt-[10px] desktop:pr-[30px] mobile:pr-[30px] desktop:absolute mobile:absolute desktop:left-[57%] mobile:bottom-0 desktop:bottom-0 desktop:gap-y-[13px] mobile:gap-y-[13px] dark:bg-[#311331];
   }
   .heading-of-pistachio {
-    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[whitesmoke] mobile:text-[whitesmoke] desktop:text-[26px] mobile:text-[26px] desktop:font-normal mobile:font-normal;
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[whitesmoke] mobile:text-[whitesmoke] desktop:text-[26px] mobile:text-[26px] desktop:font-normal mobile:font-normal dark:text-[#b4b45a];
   }
   .span-of-pistachio {
-    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[whitesmoke] mobile:text-[whitesmoke] desktop:text-[14px] mobile:text-[14px];
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[whitesmoke] mobile:text-[whitesmoke] desktop:text-[14px] mobile:text-[14px] dark:text-[#949455];
   }
   .line-pistachio {
-    @apply desktop:w-full desktop:h-[2px] desktop:opacity-70 desktop:bg-[lightgray] desktop:mt-[35px] mobile:hidden;
+    @apply desktop:w-full desktop:h-[2px] desktop:opacity-70 desktop:bg-[lightgray] desktop:mt-[35px] mobile:hidden dark:hidden;
   }
 }
 @layer components {
   .nuts {
-    @apply desktop:w-full mobile:w-full desktop:h-[450px] mobile:h-[450px] desktop:flex mobile:flex desktop:flex-row mobile:flex-row desktop:flex-wrap mobile:flex-wrap desktop:justify-center mobile:justify-center mobile:pt-[50px];
+    @apply desktop:w-full mobile:w-full desktop:h-[450px] mobile:h-[450px] desktop:flex mobile:flex desktop:flex-row mobile:flex-row desktop:flex-wrap mobile:flex-wrap desktop:justify-center mobile:justify-center mobile:pt-[50px] dark:bg-[#494949];
   }
   .nuts-items {
     @apply desktop:w-[45%] mobile:w-[92%] desktop:h-[450px] mobile:h-full;
@@ -380,16 +384,16 @@ html {
     @apply desktop:w-full mobile:w-full desktop:h-[38%] mobile:h-[40%] mobile:pt-[30px] desktop:pr-[20px] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-wrap mobile:flex-wrap;
   }
   .heading-of-nuts {
-    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[20px] mobile:text-[18px] desktop:text-[#ff0000] mobile:text-[#ff0000] desktop:mb-[10px] mobile:mb-[10px] desktop:font-bold mobile:font-bold;
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[20px] mobile:text-[18px] desktop:text-[#ff0000] mobile:text-[#ff0000] desktop:mb-[10px] mobile:mb-[10px] desktop:font-bold mobile:font-bold dark:text-[#bcbc58];
   }
   .paragraph-of-nuts {
-    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[16px] mobile:text-[16px] desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:opacity-70 mobile:opacity-70 desktop:text-justify mobile:text-justify desktop:leading-8 mobile:leading-8;
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[16px] mobile:text-[16px] desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:opacity-70 mobile:opacity-70 desktop:text-justify mobile:text-justify desktop:leading-8 mobile:leading-8 dark:text-[whitesmoke];
   }
   .nuts-second-item {
     @apply desktop:w-full mobile:w-full desktop:h-[40%] mobile:h-[50%] desktop:pr-[20px];
   }
   .btn-of-nuts {
-    @apply desktop:w-[140px] mobile:w-[140px] desktop:h-[40px] mobile:h-[40px] desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[16px] mobile:font-[16px] desktop:border mobile:border desktop:border-gray-300 mobile:border-gray-300 desktop:rounded-[8px] mobile:rounded-[8px] desktop:bg-[white] mobile:bg-[white] desktop:mt-[20px] mobile:mt-[20px] desktop:text-[#888888] mobile:text-[#888888] desktop:duration-300 mobile:duration-300 desktop:hover:text-[white] mobile:hover:text-[white] desktop:hover:bg-[red] mobile:hover:bg-[red];
+    @apply desktop:w-[140px] mobile:w-[140px] desktop:h-[40px] mobile:h-[40px] desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[16px] mobile:font-[16px] desktop:border mobile:border desktop:border-gray-300 mobile:border-gray-300 desktop:rounded-[8px] mobile:rounded-[8px] desktop:bg-[white] mobile:bg-[white] desktop:mt-[20px] mobile:mt-[20px] desktop:text-[#888888] mobile:text-[#888888] desktop:duration-300 mobile:duration-300 desktop:hover:text-[white] mobile:hover:text-[white] desktop:hover:bg-[red] mobile:hover:bg-[red] dark:hover:bg-[#a2a255] dark:hover:text-[whitesmoke];
   }
 }
 @layer components {
@@ -399,24 +403,24 @@ html {
 }
 @layer components {
   .magazine-golestan {
-    @apply desktop:w-full mobile:w-full desktop:h-[120px] mobile:h-[120px] desktop:flex mobile:flex desktop:flex-col mobile:flex-row desktop:flex-wrap mobile:flex-nowrap desktop:justify-center mobile:items-center desktop:pr-[300px] mobile:pr-10;
+    @apply desktop:w-full mobile:w-full desktop:h-[120px] mobile:h-[120px] desktop:flex mobile:flex desktop:flex-col mobile:flex-row desktop:flex-wrap mobile:flex-nowrap desktop:justify-center mobile:items-center desktop:pr-[300px] mobile:pr-10 dark:bg-[#494949];
   }
   .heading-of-magazine {
-    @apply desktop:w-full mobile:w-full desktop:h-fit mobile:h-fit desktop:font-[Golestan] mobile:font-[Golestan] desktop:font-bold mobile:font-bold desktop:text-[20px] mobile:text-[20px] desktop:text-[#ff0000] mobile:text-[#ff0000];
+    @apply desktop:w-full mobile:w-full desktop:h-fit mobile:h-fit desktop:font-[Golestan] mobile:font-[Golestan] desktop:font-bold mobile:font-bold desktop:text-[20px] mobile:text-[20px] desktop:text-[#ff0000] mobile:text-[#ff0000] dark:text-[#adad56];
   }
 }
 @layer components {
   .food {
-    @apply desktop:w-full mobile:w-full desktop:h-[750px] mobile:h-[1400px] desktop:bg-[#cde4b0] mobile:bg-[#cde4b0] mobile:flex desktop:flex desktop:flex-row mobile:flex-col desktop:flex-nowrap mobile:flex-wrap desktop:justify-center mobile:justify-center mobile:items-center desktop:items-center mobile:gap-y-[40px] desktop:gap-x-[10px];
+    @apply desktop:w-full mobile:w-full desktop:h-[750px] mobile:h-[1400px] desktop:bg-[#cde4b0] mobile:bg-[#cde4b0] mobile:flex desktop:flex desktop:flex-row mobile:flex-col desktop:flex-nowrap mobile:flex-wrap desktop:justify-center mobile:justify-center mobile:items-center desktop:items-center mobile:gap-y-[40px] desktop:gap-x-[10px] dark:bg-[#311331];
   }
   .food-containers-1 {
-    @apply desktop:w-[310px] mobile:w-[310px] desktop:h-[600px] mobile:h-[600px] desktop:bg-[white] mobile:bg-[white];
+    @apply desktop:w-[310px] mobile:w-[310px] desktop:h-[600px] mobile:h-[600px] desktop:bg-[white] dark:bg-[#d8d86f] mobile:bg-[white];
   }
   .food-containers-2 {
-    @apply desktop:w-[310px] mobile:w-[310px] desktop:h-[600px] mobile:h-[600px] desktop:bg-[white] mobile:bg-[white];
+    @apply desktop:w-[310px] mobile:w-[310px] desktop:h-[600px] mobile:h-[600px] desktop:bg-[white] dark:bg-[#d8d86f] mobile:bg-[white];
   }
   .food-containers-3 {
-    @apply desktop:inline-block desktop:w-[310px] desktop:h-[600px] desktop:bg-[white] mobile:hidden;
+    @apply desktop:inline-block desktop:w-[310px] desktop:h-[600px] desktop:bg-[white] dark:bg-[#d8d86f] mobile:hidden;
   }
   .food-box {
     @apply desktop:w-[310px] mobile:w-[310px] desktop:h-[300px] mobile:h-[300px];
@@ -428,21 +432,21 @@ html {
     @apply desktop:w-full mobile:w-full desktop:h-[60px] mobile:h-[60px] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:justify-center mobile:justify-center;
   }
   .header-food {
-    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[20px] mobile:text-[20px] desktop:text-[#ed1c24] mobile:text-[#ed1c24] desktop:font-normal mobile:font-normal desktop:mr-[20px] mobile:mr-[20px];
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[20px] mobile:text-[20px] desktop:text-[#ed1c24] mobile:text-[#ed1c24] desktop:font-normal mobile:font-normal desktop:mr-[20px] mobile:mr-[20px] dark:text-[purple];
   }
   .explain-of-food {
     @apply desktop:w-full mobile:w-full desktop:h-[140px] mobile:h-[140px];
   }
   .paragraph-of-food {
-    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[15px] mobile:text-[15px] desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:opacity-70 mobile:opacity-70 desktop:text-justify mobile:text-justify desktop:mx-[20px] mobile:mx-[20px] mobile:leading-8 desktop:leading-8;
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[15px] mobile:text-[15px] desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:opacity-70 mobile:opacity-70 desktop:text-justify mobile:text-justify desktop:mx-[20px] mobile:mx-[20px] mobile:leading-8 desktop:leading-8 dark:text-[#683268];
   }
   .btn-food {
-    @apply desktop:w-[100px] mobile:w-[100px] desktop:h-[40px] mobile:h-[40px] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:justify-center mobile:justify-center desktop:items-center mobile:items-center desktop:border mobile:border desktop:border-[lightgray] mobile:border-[lightgray] desktop:rounded-[8px] mobile:rounded-[8px] desktop:mr-[20px] mobile:mr-[20px] desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[15px] mobile:text-[15px] desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:opacity-80 mobile:opacity-80 desktop:duration-300 mobile:duration-300 desktop:cursor-pointer mobile:cursor-pointer desktop:hover:bg-[#ff0000] mobile:hover:bg-[#ff0000] desktop:hover:text-white mobile:hover:text-[white];
+    @apply desktop:w-[100px] mobile:w-[100px] desktop:h-[40px] mobile:h-[40px] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:justify-center mobile:justify-center desktop:items-center mobile:items-center desktop:border mobile:border desktop:border-[lightgray] mobile:border-[lightgray] dark:border-[purple] desktop:rounded-[8px] mobile:rounded-[8px] desktop:mr-[20px] mobile:mr-[20px] desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[15px] mobile:text-[15px] desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:opacity-80 mobile:opacity-80 desktop:duration-300 mobile:duration-300 desktop:cursor-pointer mobile:cursor-pointer desktop:hover:bg-[#ff0000] mobile:hover:bg-[#ff0000] desktop:hover:text-white mobile:hover:text-[white] dark:hover:bg-[purple] dark:hover:text-[#d2d277];
   }
 }
 @layer components {
   .social {
-    @apply w-full h-[600px] bg-[#e9d69f];
+    @apply w-full h-[600px] bg-[#e9d69f] dark:bg-[#311331];
   }
   .social-item {
     @apply w-full h-[580px] bg-[#105153] flex flex-col flex-wrap justify-center items-center relative;
@@ -471,27 +475,27 @@ html {
 }
 @layer components {
   .golestan {
-    @apply desktop:w-full mobile:w-full desktop:h-[450px] mobile:h-[450px] desktop:flex mobile:flex desktop:flex-row mobile:flex-row desktop:flex-nowrap mobile:flex-nowrap desktop:justify-center mobile:justify-center desktop:items-center mobile:items-center;
+    @apply desktop:w-full mobile:w-full desktop:h-[450px] mobile:h-[450px] desktop:flex mobile:flex desktop:flex-row mobile:flex-row desktop:flex-nowrap mobile:flex-nowrap desktop:justify-center mobile:justify-center desktop:items-center mobile:items-center dark:bg-[#505021];
   }
   .golestan-item {
     @apply desktop:w-[50%] mobile:w-[92%] desktop:h-[300px] mobile:h-[300px] desktop:pt-[80px] mobile:pt-[80px];
   }
   .header-of-golestan {
-    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[21px] mobile:text-[19px] desktop:font-bold mobile:font-bold desktop:text-[red] mobile:text-[red] desktop:mb-[10px] mobile:mb-[10px];
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[21px] mobile:text-[19px] desktop:font-bold mobile:font-bold desktop:text-[red] mobile:text-[red] desktop:mb-[10px] mobile:mb-[10px] dark:text-[#a9a3a3];
   }
   .paragraph-of-golestan {
-    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:opacity-80 mobile:opacity-80 desktop:text-justify mobile:text-justify desktop:leading-8 mobile:leading-8;
+    @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[#2b2b2b] mobile:text-[#2b2b2b] desktop:opacity-80 mobile:opacity-80 desktop:text-justify mobile:text-justify desktop:leading-8 mobile:leading-8 dark:text-[whitesmoke];
   }
   .btn-of-golestan {
-    @apply desktop:w-[120px] mobile:w-[120px] desktop:h-[40px] mobile:h-[40px] desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[16px] mobile:text-[16px] desktop:opacity-70 mobile:opacity-70 desktop:duration-300 mobile:duration-300 desktop:rounded-[8px] mobile:rounded-[8px] desktop:border mobile:border desktop:border-[#b8b8b8] mobile:border-[#b8b8b8] desktop:mt-[20px] mobile:mt-[20px] desktop:bg-[white] mobile:bg-[white] desktop:hover:bg-[red] mobile:hover:bg-[red] desktop:hover:text-white mobile:hover:text-white;
+    @apply desktop:w-[120px] mobile:w-[120px] desktop:h-[40px] mobile:h-[40px] desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[16px] mobile:text-[16px] desktop:opacity-70 mobile:opacity-70 desktop:duration-300 mobile:duration-300 desktop:rounded-[8px] mobile:rounded-[8px] desktop:border mobile:border desktop:border-[#b8b8b8] dark:border-[purple] mobile:border-[#b8b8b8] desktop:mt-[20px] mobile:mt-[20px] desktop:bg-[white] mobile:bg-[white] desktop:hover:bg-[red] mobile:hover:bg-[red] desktop:hover:text-white mobile:hover:text-white dark:hover:bg-[purple] dark:hover:text-[white];
   }
 }
 @layer components {
   .socialmedia {
-    @apply desktop:w-full mobile:w-full desktop:h-[130px] mobile:h-[130px] desktop:bg-[#ED1C24] mobile:bg-[#ED1C24] desktop:flex mobile:flex desktop:flex-row mobile:flex-row desktop:items-start mobile:items-start;
+    @apply desktop:w-full mobile:w-full desktop:h-[130px] mobile:h-[130px] desktop:bg-[#ED1C24] mobile:bg-[#ED1C24] desktop:flex mobile:flex desktop:flex-row mobile:flex-row desktop:items-start mobile:items-start dark:bg-[#505021];
   }
   .socialmedia-items {
-    @apply desktop:w-full mobile:w-full desktop:h-[100px] mobile:h-[100px] desktop:bg-[#EEEFEF] mobile:bg-[#EEEFEF] desktop:flex mobile:flex desktop:flex-row mobile:flex-row desktop:flex-wrap mobile:flex-wrap desktop:justify-center mobile:justify-center desktop:items-center mobile:items-center;
+    @apply desktop:w-full mobile:w-full desktop:h-[100px] mobile:h-[100px] desktop:bg-[#EEEFEF] mobile:bg-[#EEEFEF] desktop:flex mobile:flex desktop:flex-row mobile:flex-row desktop:flex-wrap mobile:flex-wrap desktop:justify-center mobile:justify-center desktop:items-center mobile:items-center dark:bg-[#311331];
   }
   .image-of-socialmedia {
     @apply desktop:cursor-pointer mobile:cursor-pointer;
