@@ -615,33 +615,51 @@
         <div class="socialmedia-items">
           <img
             class="image-of-socialmedia"
-            src="./public/image/svg/icon3-1.png"
+            src="./public/image/svg/aparat.png"
             alt=""
+            id="img_1"
+            onmouseover="mouseIn(1)"
+            onmouseout="mouseOut(1)"
           />
           <img
             class="image-of-socialmedia"
-            src="./public/image/svg/icon2-1-1.png"
+            src="./public/image/svg/facebook.png"
             alt=""
+            id="img_2"
+            onmouseover="mouseIn(2)"
+            onmouseout="mouseOut(2)"
           />
           <img
             class="image-of-socialmedia"
-            src="./public/image/svg/icon1-1-1.png"
+            src="./public/image/svg/telegram.png"
             alt=""
+            id="img_3"
+            onmouseover="mouseIn(3)"
+            onmouseout="mouseOut(3)"
           />
           <img
             class="image-of-socialmedia"
-            src="./public/image/svg/icon4-1.png"
+            src="./public/image/svg/linkdin.png"
             alt=""
+            id="img_4"
+            onmouseover="mouseIn(4)"
+            onmouseout="mouseOut(4)"
           />
           <img
             class="image-of-socialmedia"
-            src="./public/image/svg/icon5-1.png"
+            src="./public/image/svg/instagram.png"
             alt=""
+            id="img_5"
+            onmouseover="mouseIn(5)"
+            onmouseout="mouseOut(5)"
           />
           <img
             class="image-of-socialmedia"
-            src="./public/image/svg/icon6-1-2.png"
+            src="./public/image/svg/Golestan.png"
             alt=""
+            id="img_6"
+            onmouseover="mouseIn(6)"
+            onmouseout="mouseOut(6)"
           />
         </div>
       </div>
@@ -737,6 +755,23 @@
       btndarkmode.addEventListener("click", function () {
         document.children[0].classList.toggle("dark");
       });
+
+      var img_1 = document.getElementById("img-1");
+      var img_2 = document.getElementById("img-2");
+      var img_3 = document.getElementById("img-3");
+      var img_4 = document.getElementById("img-4");
+      var img_5 = document.getElementById("img-5");
+      var img_6 = document.getElementById("img-6");
+
+      function mouseIn(ele) {
+        if (ele == 1) {
+          img_1.setAttribute("src", "./public/image/svg/aparat-color.png");
+        } else if (ele == 2) {
+          img_2.setAttribute("src", "./public/image/svg/facebook-color.png");
+        } else {
+          img_3.setAttribute("src", "./public/image/svg/telegram-color.png");
+        }
+      }
     </script>
   </body>
 </html>

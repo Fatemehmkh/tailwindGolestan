@@ -461,7 +461,7 @@ html {
     @apply desktop:w-[310px] mobile:w-[310px] desktop:h-[300px] mobile:h-[300px];
   }
   .image-of-food {
-    @apply desktop:w-[310px] mobile:w-[310px] desktop:h-[300px] mobile:h-full desktop:object-cover mobile:object-cover desktop:hover:opacity-80 mobile:hover:opacity-80;
+    @apply desktop:w-[310px] mobile:w-[310px] desktop:h-[300px] mobile:h-full desktop:object-cover mobile:object-cover desktop:hover:opacity-80 mobile:hover:opacity-80 dark:brightness-50;
   }
   .header-box-food {
     @apply desktop:w-full mobile:w-full desktop:h-[60px] mobile:h-[60px] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:justify-center mobile:justify-center;
@@ -533,6 +533,6 @@ html {
     @apply desktop:w-full mobile:w-full desktop:h-[100px] mobile:h-[100px] desktop:bg-[#EEEFEF] mobile:bg-[#EEEFEF] desktop:flex mobile:flex desktop:flex-row mobile:flex-row desktop:flex-wrap mobile:flex-wrap desktop:justify-center mobile:justify-center desktop:items-center mobile:items-center dark:bg-[#311331];
   }
   .image-of-socialmedia {
-    @apply desktop:cursor-pointer mobile:cursor-pointer;
+    @apply w-[60px] h-[60px] desktop:cursor-pointer mobile:cursor-pointer hover:w-[80px] hover:h-[80px] transition-all duration-300;
   }
 }
