@@ -59,37 +59,16 @@ html {
     @apply desktop:w-full desktop:h-[100px] desktop:flex desktop:flex-nowrap desktop:flex-row desktop:justify-center desktop:items-center desktop:pt-[50px] desktop:pr-[90px] desktop:relative mobile:hidden;
   }
   .nav-item {
-    @apply desktop:w-fit desktop:h-[30px] desktop:flex desktop:flex-wrap desktop:flex-row desktop:justify-center desktop:items-center desktop:border-l desktop:border-solid desktop:border-l-[#665F5F] desktop:mb-[30px];
+    @apply desktop:w-fit desktop:h-[30px] desktop:flex desktop:flex-wrap desktop:flex-row desktop:justify-center desktop:items-center desktop:border-l desktop:border-solid desktop:border-l-[#665F5F] desktop:mb-[30px] desktop:relative;
   }
-  .nav-item:hover > .sub-menu-company {
-    @apply desktop:block;
-  }
-  .nav-item:hover > .sub-menu-category {
-    @apply desktop:block;
-  }
-  .nav-item:hover > .sub-menu-weblog {
-    @apply desktop:block;
-  }
-  .nav-item:hover > .sub-menu-call {
-    @apply desktop:block;
+  .nav-item:hover > .sub-menu {
+    @apply desktop:flex desktop:flex-col desktop:flex-nowrap desktop:justify-start desktop:items-start;
   }
   .nav-link {
     @apply desktop:block desktop:w-fit desktop:py-0 desktop:px-5 desktop:no-underline desktop:text-[#c4bcbc] desktop:font-[Golestan]  desktop:text-base desktop:cursor-pointer desktop:leading-[20px] desktop:hover:text-[white] desktop:duration-300;
   }
-  .sub-menu-company {
-    @apply desktop:w-[180px] desktop:h-[40vh] desktop:absolute desktop:hidden bg-[url('../image/background/header-back.png')] top-[83px] right-[35%] pr-[15px] transition duration-300 delay-500;
-  }
-  .sub-menu-category {
-    @apply desktop:w-[182px] desktop:h-[70vh] desktop:bg-[url('../image/background/header-back.png')] desktop:absolute desktop:top-[83px] desktop:left-[45%]  desktop:pr-[15px] desktop:pt-[10px] desktop:hidden;
-  }
-  .sub-menu-weblog {
-    @apply desktop:w-[180px] desktop:h-[35vh] desktop:bg-[url('../image/background/header-back.png')] desktop:absolute desktop:top-[83px] desktop:left-[38%]  desktop:pr-[15px] desktop:pt-[10px] desktop:hidden;
-  }
-  .sub-menu-call {
-    @apply desktop:w-[180px] desktop:h-[20vh] desktop:bg-[url('../image/background/header-back.png')] desktop:absolute desktop:top-[83px] desktop:left-[20%]  desktop:pr-[15px] desktop:pt-[10px] desktop:hidden;
-  }
-  .sub-menu-item {
-    @apply desktop:w-fit desktop:h-[30px];
+  .sub-menu {
+    @apply desktop:w-[200px] desktop:absolute desktop:top-7 desktop:pr-[20px] desktop:pl-[10px] desktop:py-[20px] desktop:right-[10px] desktop:hidden desktop:bg-[url('../image/background/header-back.png')];
   }
   .sub-menu-link {
     @apply desktop:font-[Golestan] desktop:text-[#b5b5b5] desktop:opacity-90 desktop:hover:text-[white] desktop:duration-300 desktop:block desktop:leading-10;
