@@ -2260,9 +2260,9 @@ h1,
 @media (min-width: 0) {
   .introduce {
     display: flex;
-    height: 600px;
+    height: 700px;
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -3202,7 +3202,7 @@ h1,
 @media (min-width: 0) {
   .nuts {
     display: flex;
-    height: 450px;
+    height: 500px;
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
