@@ -266,13 +266,13 @@ html {
 }
 @layer components {
   .introduce {
-    @apply desktop:w-full mobile:w-full desktop:h-[900px] mobile:h-[700px] desktop:flex mobile:flex desktop:flex-col mobile:flex-row desktop:flex-wrap mobile:flex-wrap desktop:items-center mobile:items-center desktop:justify-center mobile:justify-center desktop:mb-[100px] dark:bg-[#2b2b2b] dark:text-white;
+    @apply desktop:w-full mobile:w-full desktop:h-[900px] mobile:h-[600px] desktop:flex mobile:flex desktop:flex-col mobile:flex-col desktop:flex-wrap mobile:flex-wrap desktop:items-center mobile:items-center desktop:justify-center mobile:justify-center desktop:mb-[100px] dark:mb-0 dark:bg-[#2b2b2b] dark:text-white;
   }
   .introduce-item {
     @apply desktop:w-1/2 mobile:w-[92%] desktop:mt-[50px] mobile:mt-[50px];
   }
   .introduce-item-second {
-    @apply desktop:w-1/2 desktop:mt-[50px] mobile:w-[92%] mobile:mt-[50px];
+    @apply desktop:w-1/2 desktop:mt-[50px] mobile:w-[92%] mobile:mt-[50px] dark:pb-[10px];
   }
   .heading-of-introduce {
     @apply desktop:font-[Golestan] mobile:font-[Golestan] desktop:text-[red] mobile:text-[red] mobile:font-bold desktop:text-xl mobile:text-[17px] desktop:font-bold desktop:mb-[15px] mobile:mb-[15px] dark:text-[#bbbb5d];
@@ -389,7 +389,7 @@ html {
 }
 @layer components {
   .nuts {
-    @apply desktop:w-full mobile:w-full desktop:h-[450px] mobile:h-[500px] desktop:flex mobile:flex desktop:flex-row mobile:flex-row desktop:flex-wrap mobile:flex-wrap desktop:justify-center mobile:justify-center mobile:pt-[50px] dark:bg-[#494949];
+    @apply desktop:w-full mobile:w-full desktop:h-[450px] mobile:h-[450px] desktop:flex mobile:flex desktop:flex-row mobile:flex-row desktop:flex-wrap mobile:flex-wrap desktop:justify-center mobile:justify-center mobile:pt-[50px] dark:bg-[#494949];
   }
   .nuts-items {
     @apply desktop:w-[45%] mobile:w-[92%] desktop:h-[450px] mobile:h-full;
